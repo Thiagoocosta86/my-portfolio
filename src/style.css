@@ -1,0 +1,258 @@
+/*HTML*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*BODY*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #004568;
+  background-color: #97CBDC;
+  
+  border: 4px solid #333; 
+}
+
+/*HEADER/NAVBAR*/
+header {
+  display: flex;
+  color: #004568;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B4CBD3;
+  padding-left: 20%;
+  padding-right: 10%;
+  
+}
+
+/*Logo style*/
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  align-items: center;
+  font-size: x-large;
+  letter-spacing: 5px;
+  
+}
+
+/*Navbar style*/
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #004568;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: transparent; /* Set text color to transparent */
+  -webkit-text-stroke: 1px #004568;
+}
+
+/*MAIN*/
+main {
+  max-width: 1700px;
+  margin: 0 auto;
+  border: 4px solid #333; 
+}
+
+/*HOME*/
+
+/*Hero style*/
+.hero {
+  
+  border: 4px solid #333;
+  margin-bottom: 100px;
+}
+
+
+
+/*.container {
+  display: flex;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+*/
+
+
+/*
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+*/
+
+/*Hero(pic) style*/
+
+.profile__container {
+  
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  height: 700px;
+  border: 4px solid #333;
+  
+}
+
+/*.profile-pic {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.profile-pic {
+  position: relative; /* Position the images relative to this container */
+  width: 612px; /* Set the width to the width of the images */
+  height: 612px; /* Set the height to the height of the images */
+  border: 3.5px solid #d1fffc; /* Border styling */
+  border-radius: 50%; /* Create a circular border */
+  overflow: hidden; /* Ensure that child images don't overflow the border */
+  transition: border-color 1.0s ease; /* Add transition effect for border color */
+  margin-top: 50px;
+  
+}
+
+.profile-pic img {
+  position: absolute; /* Position the images absolutely within the container */
+  top: 0; /* Align images to the top */
+  left: 0; /* Align images to the left */
+  width: 100%;
+  height: 100%;
+  transition: opacity 1.0s ease; /* Add transition effect for opacity */
+}
+
+.profile-pic img:last-child {
+  opacity: 0; /* Initially hide the second image */
+}
+
+.profile-pic:hover {
+  border-color: #40E0D0; /* Change border color on hover */
+}
+
+.profile-pic:hover img:first-child {
+  opacity: 1; /* Hide the first image on hover */
+}
+
+.profile-pic:hover img:last-child {
+  opacity: 1; /* Show the second image on hover */
+}
+
+/*About style*/
+.about-text h2{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;  
+  color: #004568;
+}
+
+.about-text {
+  max-width: 1000px;
+  align-self: center;
+  border: 4px solid #333;
+}
+
+/*Social Media style*/
+.social-media-links {
+  display: flex;
+  justify-content: space-around;
+  border: 4px solid #333;
+}
+
+.social__profile {
+  display: flex; /* Use flexbox to enable gap */
+  gap: 3rem; /* Add space between the items */
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+}
+
+
+.social__profile-link svg {
+  fill: #0e76a8; /* Default color for all icons */
+  transition: fill 1s ease; transform: 1s;
+  transform: scale(1)
+}
+
+
+.LinkedInIcon:hover svg {
+  fill: #0A66C2; /* LinkedIn blue */
+  transform: scale(1.1)
+}
+
+
+.GithubIcon:hover svg {
+  fill: #111111; /* GitHub green */
+  transform: scale(1.1)
+}
+
+
+.WhatsappIcon:hover svg {
+  fill: #00A884; /* WhatsApp green */
+  transform: scale(1.1)
+}
+
+/*SKILLS*/
+.skills{
+  border: 4px solid #333;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.skills h2{
+  text-align: center;
+  font-size: 2rem;
+  color: #004568;
+  margin-bottom: 30px; 
+}
+
+.skills-container{
+  border: 4px solid #333;
+
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  gap: 20px; /* Add gap between columns */
+  padding: 20px;
+}
+
+.skills-column{
+  flex: 1;
+  border: 4px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frontend-skills, .backend-skills{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 10px;
+}
+
+.frontend-skills li, .backend-skills li{
+  font-size: 1.2rem;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
