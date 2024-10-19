@@ -240,7 +240,7 @@ main {
   align-items: center;
 }
 
-.frontend-skills, .backend-skills{
+.soft-skills,.frontend-skills, .backend-skills{
   list-style: none;
   padding: 0;
   margin: 0;
@@ -251,7 +251,7 @@ main {
   gap: 10px;
 }
 
-.frontend-skills li, .backend-skills li{
+.soft-skills, .frontend-skills li, .backend-skills li{
   font-size: 1.2rem;
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
