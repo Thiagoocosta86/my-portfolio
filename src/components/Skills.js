@@ -23,6 +23,7 @@ const Skills = () => {
             <li>MongoDB</li>
             <li>MySQL</li>
             <li>PHP</li>
+            <li>Java</li>
           </ul>
         </div>
       </div>
