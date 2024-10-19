@@ -224,20 +224,43 @@ main {
 
 .skills-container{
   border: 4px solid #333;
+  transition: transform 0.6s ease;
+  width: 200%;
+  position: relative;
 
-  display: flex;
+  /*display: flex;
   justify-content: space-around;
   height: auto;
-  gap: 20px; /* Add gap between columns */
-  padding: 20px;
+  gap: 20px; 
+  padding: 20px;*/
+}
+
+.skills-container.shift{
+  transform: translateX(-50%);
 }
 
 .skills-column{
   flex: 1;
-  border: 4px solid #333;
+  padding: 20px;
+  width: 50%;
+  box-sizing: border-box;
+  /*border: 4px solid #333;*/
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.soft-skills-panel {
+  border: 4px solid #333;
+  background-color: #f5f5f5;
+}
+
+.hard-skills-panel {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  border: 4px solid #333;
+  background-color: #fafafa;
 }
 
 .soft-skills,.frontend-skills, .backend-skills{
@@ -251,8 +274,23 @@ main {
   gap: 10px;
 }
 
-.soft-skills, .frontend-skills li, .backend-skills li{
+.soft-skills li, .frontend-skills li, .backend-skills li{
   font-size: 1.2rem;
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
+}
+
+.toggle-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #004568;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #00334d;
 }

@@ -12,8 +12,9 @@ const Skills = () => {
   return (
     <section className="skills">
       <h2>Skills</h2>
-      <div className="skills-container">
-        <div className="skills-column">
+
+      <div className={`skills-container ${currentPanel === 1 ?'shift':''}`}>
+        <div className="skills-column soft-skills-panel">
           <h3>Soft Skills</h3>
           <ul className="soft-skills">
             <li>Team Player</li>
@@ -23,7 +24,8 @@ const Skills = () => {
             <li>#</li>
           </ul>
         </div>
-        <div className="skills-column">
+
+        <div className="skills-column hard-skills-panel">
           <h3>Frontend</h3>
           <ul className="frontend-skills">
             <li>HTML</li>
@@ -33,7 +35,8 @@ const Skills = () => {
             <li>Vue.js</li>
           </ul>
         </div>
-        <div className="skills-column">
+
+        <div>
           <h3>Backend</h3>
           <ul className="backend-skills">
             <li>Node.js</li>
@@ -45,6 +48,11 @@ const Skills = () => {
           </ul>
         </div>
       </div>
+
+      <button className="toggle-btn" onClick={handleNextPanel}>
+        {currentPanel === 0 ? 'Next →' : '← Back'}
+      </button>
+
     </section>
   );
 };
