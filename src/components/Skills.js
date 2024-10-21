@@ -1,5 +1,7 @@
 import React, {useState}from 'react';
 
+import { ReactComponent as FowardIcon } from "../assets/icons/";
+
 const Skills = () => {
 
   const [currentPanel, setCurrentPanel] = useState(0);
