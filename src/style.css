@@ -208,73 +208,82 @@ main {
 }
 
 /*SKILLS*/
-.skills{
+.skills {
   border: 4px solid #333;
   padding: 20px;
   margin: 20px auto;
   max-width: 1200px;
+  overflow: hidden;
 }
 
-.skills h2{
+.skills h2 {
   text-align: center;
   font-size: 2rem;
   color: #004568;
   margin-bottom: 30px; 
 }
 
-.skills-container{
-  border: 4px solid #333;
-  transition: transform 0.6s ease;
-  width: 200%;
+.skills-container {
+  display: flex;
+  justify-content: center;
   position: relative;
-
-  /*display: flex;
-  justify-content: space-around;
-  height: auto;
-  gap: 20px; 
-  padding: 20px;*/
+  transition: transform 6s ease;
+  height: 500px;
 }
 
-.skills-container.shift{
-  transform: translateX(-50%);
-}
-
-.skills-column{
+.skills-column {
   flex: 1;
   padding: 20px;
-  width: 50%;
   box-sizing: border-box;
-  /*border: 4px solid #333;*/
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* For Soft Skills panel */
 .soft-skills-panel {
   border: 4px solid #333;
-  background-color: #f5f5f5;
+  
+  width: 100%;
+  height: 100%;
+  
 }
 
+/* For Hard Skills panel */
 .hard-skills-panel {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 0 40px;
+  width: 100%;
+  padding: 20px;
   border: 4px solid #333;
-  background-color: #fafafa;
+  
+  flex-wrap: wrap; /* Ensure columns don't stack on small screens */
 }
 
-.soft-skills,.frontend-skills, .backend-skills{
+.frontend-column, .backend-column {
+  flex: 1; /* Ensure both columns are flexible */
+  min-width: 45%; /* This ensures that they stay side by side even on medium screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   /* Optional border for better visualization */
+  padding: 10px;
+  height: 100%;
+}
+
+.soft-skills, .frontend-skills, .backend-skills {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   gap: 10px;
 }
 
-.soft-skills li, .frontend-skills li, .backend-skills li{
+.soft-skills li, .frontend-skills li, .backend-skills li {
   font-size: 1.2rem;
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
