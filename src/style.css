@@ -198,7 +198,7 @@ main {
 
 
 .GithubIcon:hover svg {
-  fill: #111111; /* GitHub green */
+  fill: #111111; /* GitHub Black*/
   transform: scale(1.1)
 }
 
@@ -217,111 +217,103 @@ main {
   overflow: hidden;
 }
 
-.skills h2 {
+.skills h3 {
   text-align: center;
   font-size: 2rem;
   color: #004568;
   margin-bottom: 30px;
-  position: relative;
+  border: 4px solid #802f2f;
+  
 }
-
-.skills-header {
+.skills h4{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #004568;
+  margin-bottom: 30px;
+  border: 4px solid #802f2f;
+  
+}
+/* Tab Header Styles */
+.tab-header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative; /* Needed to align the icons */
   margin-bottom: 20px;
+  border: 4px solid #2d6851;
 }
 
-.icon-wrapper {
-  display: flex;
-  align-items: center;
+.tab-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  border: none;
+  background-color: #eee;
+  color: #004568;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+  border: 4px solid #4d309e;
 }
 
-.icon-wrapper.left {
-  padding-right:  300px;
+.tab-button:hover {
+  background-color: #ddd;
 }
 
-.icon-wrapper.right {
-  padding-left: 300px;
+.tab-button.active {
+  background-color: #004568;
+  color: #fff;
 }
 
-.icon {
-  width: 32px;
-  height: 32px;
-  fill: #004568; /* Color of the icon */
+/* Panel Content Styles */
+.tab-content {
+  padding: 20px;
+  border: 6px solid #004568;
+  border-top: none;
   
 }
 
-.icon:hover {
-  fill: #00334d; /* Hover color for icons */
-}
-
-.skills-container {
+.skills-panel, .certificates-panel {
   display: flex;
-  justify-content: center;
-  position: relative;
-  transition: transform 6s ease;
+  flex-direction: column;
+  align-items: center;
+  
   height: 500px;
+  border: 4px solid #9e286d;
 }
 
 .skills-column {
   flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* For Soft Skills panel */
-.soft-skills-panel {
-  border: 4px solid #333;
   
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  
-}
-
-/* For Hard Skills panel */
-.hard-skills-panel {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px;
+  margin-top: 20px;
   border: 4px solid #333;
-
 }
 
+/* Frontend and Backend Skills Styles */
 .frontend-column, .backend-column {
-  flex: 1; /* Ensure both columns are flexible */
-  min-width: 45%; /* This ensures that they stay side by side even on medium screens */
+  flex: 1;
+  min-width: 45%;
+  border: 4px solid #111ece;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-   /* Optional border for better visualization */
-  padding: 10px;
-  height: 100%;
 }
 
-.soft-skills, .frontend-skills, .backend-skills {
+
+.frontend-skills, .backend-skills {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  border: 4px solid #333;
 }
 
-.soft-skills li, .frontend-skills li, .backend-skills li {
-  font-size: 1.2rem;
+.frontend-skills li, .backend-skills li {
+  font-size: 0.8rem;
   padding: 5px 0;
   border-bottom: 1px solid #ddd;
 }
