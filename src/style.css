@@ -236,12 +236,13 @@ main {
 /* Tab Header Styles */
 .tab-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 20px;
   border: 4px solid #2d6851;
 }
 
 .tab-button {
+  flex: 1;
   padding: 10px 20px;
   font-size: 1.2rem;
   cursor: pointer;
