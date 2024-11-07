@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
+
+/*Frontend Icons*/
 import { ReactComponent as Html } from '../assets/icons/html-colour.svg';
 import { ReactComponent as Css } from '../assets/icons/css-colour.svg';
 import { ReactComponent as JavaScript } from '../assets/icons/javascript-colour.svg';
 import { ReactComponent as ReactIcon } from '../assets/icons/react-colour.svg';
 
+/*Backend Icons*/
+import { ReactComponent as Java } from '../assets/icons/java-colour.svg';
+import { ReactComponent as Python } from '../assets/icons/python-colour.svg';
+import { ReactComponent as Nodejs } from '../assets/icons/nodejs-colour.svg';
+import { ReactComponent as Aws } from '../assets/icons/aws-colour.svg';
+import { ReactComponent as Mongodb } from '../assets/icons/mongodb-colour.svg';
+import { ReactComponent as Mysql } from '../assets/icons/mysql-colour.svg';
 
 const Skills = () => {
   const [currentTab, setCurrentTab] = useState(0);
@@ -70,12 +79,48 @@ const Skills = () => {
               <div className="backend-column">
                 <h4>Backend</h4>
                 <ul className="backend-skills">
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>MongoDB</li>
-                  <li>MySQL</li>
-                  <li>PHP</li>
-                  <li>Java</li>
+                  <li>
+                    <Java title="Java" width="24" height="24" alt="Java Icon" className="tech-icon" />
+                      Java
+                    <div className="knowledge-level">
+                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <Python title="Python" width="24" height="24" alt="Python Icon" className="tech-icon" />
+                      Python
+                    <div className="knowledge-level">
+                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <Nodejs title="NodeJS" width="24" height="24" alt="NodeJS Icon" className="tech-icon" />
+                      NodeJS
+                    <div className="knowledge-level">
+                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <Aws title="AWS" width="24" height="24" alt="AWS Icon" className="tech-icon" />
+                      AWS
+                    <div className="knowledge-level">
+                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <Mongodb title="MongoDB" width="24" height="24" alt="MongoDB Icon" className="tech-icon" />
+                      MongoDB
+                    <div className="knowledge-level">
+                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <Mysql title="MySQL" width="24" height="24" alt="MySQL Icon" className="tech-icon" />
+                      MySQL
+                    <div className="knowledge-level">
+                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
