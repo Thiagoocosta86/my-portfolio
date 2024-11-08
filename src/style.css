@@ -355,8 +355,8 @@ main {
   background-color: #e0e0e0;
   border-radius: 4px;
   width: 100px;
-  height: 8px;
-  
+  height: 20px;
+  position: relative;
   overflow: hidden;
   margin-left: auto;
 }
@@ -365,7 +365,31 @@ main {
   background-color: #004568;
   height: 100%;
   transition: width 0.3s ease;
+  position: relative;
 }
+
+.progress-bar::after {
+  content: attr(data-percentage);
+  position: absolute;
+   /* Position above the progress bar */
+  
+  left: 50%;
+  transform: translateX(-50%, -50%);
+  background-color: #004568;
+  color: #B4CBD3;
+  padding: 2px 2px;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none; /* Makes tooltip unclickable */
+}
+
+.progress-bar:hover::after {
+  opacity: 1; /* Show tooltip on hover */
+}
+
 /*
 .toggle-btn {
   margin-top: 20px;

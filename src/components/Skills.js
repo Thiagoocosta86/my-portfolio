@@ -48,28 +48,28 @@ const Skills = () => {
                     <Html title="HTML" width="24" height="24" alt="HTML Icon" className="tech-icon" />
                     HTML
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '85%' }}></div>
+                      <div className="progress-bar" style={{ width: '85%' }} data-percentage="85%"></div>
                     </div>
                   </li>
                   <li>
                     <Css title="CSS" width="24" height="24" alt="CSS Icon" className="tech-icon" />
                       CSS
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '45%' }}></div>
+                      <div className="progress-bar" style={{ width: '45%' }} data-percentage="45%"></div>
                     </div>
                   </li>
                   <li>
                     <JavaScript title="JavaScript" width="24" height="24" alt="JavaScript Icon" className="tech-icon" />
                       JavaScript
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '40%' }}></div>
+                      <div className="progress-bar" style={{ width: '40%' }} data-percentage="40%"></div>
                     </div>
                   </li>
                   <li>
                     <ReactIcon title="React" width="24" height="24" alt="React Icon" className="tech-icon" />
                       React
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                      <div className="progress-bar" style={{ width: '35%' }} data-percentage="35%"></div>
                     </div>
                   </li>
                   
@@ -83,42 +83,42 @@ const Skills = () => {
                     <Java title="Java" width="24" height="24" alt="Java Icon" className="tech-icon" />
                       Java
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                      <div className="progress-bar" style={{ width: '55%' }} data-percentage="55%"></div>
                     </div>
                   </li>
                   <li>
                     <Python title="Python" width="24" height="24" alt="Python Icon" className="tech-icon" />
                       Python
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                      <div className="progress-bar" style={{ width: '55%' }} data-percentage="55%"></div>
                     </div>
                   </li>
                   <li>
                     <Nodejs title="NodeJS" width="24" height="24" alt="NodeJS Icon" className="tech-icon" />
                       NodeJS
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                      <div className="progress-bar" style={{ width: '35%' }} data-percentage="35%"></div>
                     </div>
                   </li>
                   <li>
                     <Aws title="AWS" width="24" height="24" alt="AWS Icon" className="tech-icon" />
                       AWS
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                      <div className="progress-bar" style={{ width: '67%' }} data-percentage="67%"></div>
                     </div>
                   </li>
                   <li>
                     <Mongodb title="MongoDB" width="24" height="24" alt="MongoDB Icon" className="tech-icon" />
                       MongoDB
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                      <div className="progress-bar" style={{ width: '50%' }} data-percentage="50%"></div>
                     </div>
                   </li>
                   <li>
                     <Mysql title="MySQL" width="24" height="24" alt="MySQL Icon" className="tech-icon" />
                       MySQL
                     <div className="knowledge-level">
-                      <div className="progress-bar" style={{ width: '35%' }}></div>
+                      <div className="progress-bar" style={{ width: '52%' }} data-percentage="52%"></div>
                     </div>
                   </li>
                 </ul>
