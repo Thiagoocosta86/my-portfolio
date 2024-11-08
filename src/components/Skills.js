@@ -171,7 +171,7 @@ const Skills = () => {
                 <img src={awsIntroCloud101} alt="AWS Intro to Cloud 101" title="AWS Introduction to Cloud 101" width="128" height="128" />
               </li>
               <li>
-                <img src={awsFoundationsCertificate} alt="AWS Foundations Certificate" title="AWS Foundations Certificate" width="150" height="110" />
+                <img src={awsFoundationsCertificate} alt="AWS Foundations Certificate" title="AWS Foundations Certificate" width="200" height="150" />
               </li>
             </ul>
           </div>
