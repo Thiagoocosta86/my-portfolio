@@ -390,6 +390,19 @@ main {
   opacity: 1; /* Show tooltip on hover */
 }
 
+.certificates-panel{
+  /*border: 4px solid #333;*/
+}
+
+.certificates{
+  list-style: none;
+  display: flex;
+  /*border: 4px solid #333;*/
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 /*
 .toggle-btn {
   margin-top: 20px;

@@ -14,6 +14,20 @@ import { ReactComponent as Aws } from '../assets/icons/aws-colour.svg';
 import { ReactComponent as Mongodb } from '../assets/icons/mongodb-colour.svg';
 import { ReactComponent as Mysql } from '../assets/icons/mysql-colour.svg';
 
+
+import awsFoundations from "../assets/img/aws-academy-cloud-foundations.png";
+import awsGetStarted from "../assets/img/aws-getting-started-with-cloud-ops.png";
+import awsGetStartedCompute from "../assets/img/aws-getting-started-with-compute.png";
+import awsGetStartedNetworking from "../assets/img/aws-getting-started-with-networking.png";
+import awsGetStartedSecurity from "../assets/img/aws-getting-started-with-security.png";
+import awsGetStartedServerless from "../assets/img/aws-getting-started-with-serverless.png";
+import awsGetStartedStorage from "../assets/img/aws-getting-started-with-storage.png";
+import awsIntroCloud101 from "../assets/img/aws-introduction-to-cloud-101.png";
+import awsFoundationsCertificate from "../assets/img/AWS-graduate-Academy-Cloud-Foundations.png";
+
+
+
+
 const Skills = () => {
   const [currentTab, setCurrentTab] = useState(0);
 
@@ -130,8 +144,36 @@ const Skills = () => {
         {currentTab === 1 && (
           <div className="certificates-panel">
             <h3>Certificates</h3>
-            {/* Certificates details to be added later */}
-            <p>List certifications.</p>
+            
+            <ul className="certificates">
+              <li>
+                <img src={awsFoundations} alt="AWS Foundations" title="AWS Foundations" width="128" height="128" />
+              </li>
+              <li>
+                <img src={awsGetStarted} alt="AWS Getting Started Cloud" title="AWS Getting Started with Cloud Operations" width="128" height="128" />
+              </li>
+              <li>
+                <img src={awsGetStartedCompute} alt="AWS Getting Started Compute" title="AWS Getting Started with Compute" width="128" height="128" />
+              </li>
+              <li>
+                <img src={awsGetStartedNetworking} alt="AWS Get Started Networking" title="AWS Getting Started with Networking" width="128" height="128" />
+              </li>
+              <li>
+                <img src={awsGetStartedSecurity} alt="AWS Get Started Security" title="AWS Getting Started with Security" width="128" height="128" />
+              </li>
+              <li>
+                <img src={awsGetStartedServerless} alt="AWS Get Started Serverless" title="AWS Getting Started with Serverless" width="128" height="128" />
+              </li>
+              <li>
+                <img src={awsGetStartedStorage} alt="AWS Get Started Storage" title="AWS Getting Started with Storage" width="128" height="128" />
+              </li>
+              <li>
+                <img src={awsIntroCloud101} alt="AWS Intro to Cloud 101" title="AWS Introduction to Cloud 101" width="128" height="128" />
+              </li>
+              <li>
+                <img src={awsFoundationsCertificate} alt="AWS Foundations Certificate" title="AWS Foundations Certificate" width="150" height="110" />
+              </li>
+            </ul>
           </div>
         )}
       </div>
