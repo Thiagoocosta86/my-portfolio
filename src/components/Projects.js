@@ -29,7 +29,7 @@ const Projects = () => {
                         <h3 class="projects__title">RentACar</h3>
                         <a href="https://github.com/Thiagoocosta86/RentACar.git"
                             class="projects__button button button__small">
-                            <i>&#128279;</i>
+                            <GithubIcon width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const Projects = () => {
                         <h3 class="projects__title">ssp-ca3</h3>
                         <a href="https://github.com/Thiagoocosta86/ssp-ca3.git"
                             class="projects__button button button__small">
-                            <i>&#128279;</i>
+                            <GithubIcon width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const Projects = () => {
                         <h3 class="projects__title">Electricity-Bill Calculator</h3>
                         <a href="https://github.com/tahrodriguess/Eletricity-Bill.git"
                             class="projects__button button button__small">
-                            <i>&#128279;</i>
+                            <GithubIcon width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
                 </div>
