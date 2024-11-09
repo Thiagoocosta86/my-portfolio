@@ -1,6 +1,6 @@
 import React from 'react';
-import profilePic1 from "../assets/img/profile-pic1.png";
-import profilePic2 from "../assets/img/profile-pic2.png";
+import profilePic1 from "../assets/img/profile-pic (5).png";
+import profilePic2 from "../assets/img/profile-pic (9).png";
 import { ReactComponent as GithubIcon } from "../assets/icons/logo-github.svg";
 import { ReactComponent as LinkedInIcon } from "../assets/icons/logo-linkedin.svg";
 import { ReactComponent as WhatsappIcon } from "../assets/icons/logo-whatsapp.svg";
