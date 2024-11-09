@@ -98,7 +98,8 @@ main {
   position: relative; /* Position the images relative to this container */
   width: 612px; /* Set the width to the width of the images */
   height: 612px; /* Set the height to the height of the images */
-  border: 3.5px solid #d1fffc; /* Border styling */
+  border: 3.5px solid #97cbdc; /* Border styling */
+  
   border-radius: 50%; /* Create a circular border */
   overflow: hidden; /* Ensure that child images don't overflow the border */
   transition: border-color 1.0s ease; /* Add transition effect for border color */
@@ -120,7 +121,7 @@ main {
 }
 
 .profile-pic:hover {
-  border-color: #40E0D0; /* Change border color on hover */
+  border-color: #004568; /* Change border color on hover */
 }
 
 .profile-pic:hover img:first-child {
@@ -140,7 +141,7 @@ main {
 }
 
 .about-text {
-  max-width: 1000px;
+  max-width: 800px;
   align-self: center;
   /*border: 4px solid #3a85ca;*/
 }
