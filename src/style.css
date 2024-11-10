@@ -448,7 +448,7 @@ main {
 
 .projects__content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
   gap: 3rem; /* Space between items */
   align-items: start;
   justify-content: center;
