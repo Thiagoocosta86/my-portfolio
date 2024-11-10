@@ -1,4 +1,6 @@
 import React from 'react';
+import aboutText from '../data/aboutText';
+
 import profilePic1 from "../assets/img/profile-pic1.png";
 import profilePic2 from "../assets/img/profile-pic2.png";
 import { ReactComponent as GithubIcon } from "../assets/icons/logo-github.svg";
@@ -16,7 +18,7 @@ const About = () => {
           </div>
           <div className="about-text">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>{aboutText}</p>
           </div> 
         </div>
         <div className='social-media-links'>
