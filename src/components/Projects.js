@@ -20,6 +20,9 @@ const Projects = () => {
                         </a>
                     </div>
                 </div>
+                <div className="projects__description">
+                    <p>###</p>
+                </div>
             </article>
             <article class="projects__card">
                 <img src={codingImg} alt="codingImg" title="" width="128" height="128" />
@@ -32,6 +35,9 @@ const Projects = () => {
                             <GithubIcon width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
+                </div>
+                <div className="projects__description">
+                    <p>###</p>
                 </div>
             </article>
             <article class="projects__card">
@@ -46,6 +52,9 @@ const Projects = () => {
                         </a>
                     </div>
                 </div>
+                <div className="projects__description">
+                    <p>###</p>
+                </div>
             </article>
             <article class="projects__card">
                 <img src={codingImg} alt="codingImg" title="" width="128" height="128" />
@@ -58,6 +67,9 @@ const Projects = () => {
                             <GithubIcon width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
+                </div>
+                <div className="projects__description">
+                    <p>###</p>
                 </div>
             </article>
       </div>
