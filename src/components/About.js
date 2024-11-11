@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutText from '../data/aboutText';
+import {aboutText} from '../data/dataText';
 
 import profilePic1 from "../assets/img/profile-pic1.png";
 import profilePic2 from "../assets/img/profile-pic2.png";

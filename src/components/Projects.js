@@ -1,7 +1,9 @@
 import React from 'react';
 
+import {carCrashWebApp} from '../data/dataText';
+
 import codingImg from "../assets/img/coding.jpg";
-import carCrashWebApp from "../assets/img/carCrashWebApp.png";
+import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
 import { ReactComponent as GithubIcon } from "../assets/icons/logo-github2.svg";
 
 const Projects = () => {
@@ -10,7 +12,7 @@ const Projects = () => {
       <h3>Projects</h3>
       <div class="projects__content grid filters__active " data-content id="projects">
             <article class="projects__card">
-                <img src={carCrashWebApp} alt="codingImg" title="" width="128" height="128" />
+                <img src={carCrashWebAppPic} alt="codingImg" title="" width="128" height="128" />
                 <div class="projects__modal">
                     <div>
                         <span class="projects__subtitle">Web/ML</span>
@@ -22,7 +24,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="projects__description">
-                    <p>Web application that based on 18 variables can predict with 85% accuracy if a driver is at fault or not. <b>Click on the GitHub icon to learn more.</b></p>
+                    <p dangerouslySetInnerHTML={{ __html: carCrashWebApp }} />
                 </div>
             </article>
             <article class="projects__card">
