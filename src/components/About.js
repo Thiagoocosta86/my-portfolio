@@ -1,8 +1,8 @@
 import React from 'react';
 import {aboutText} from '../data/dataText';
 
-import profilePic1 from "../assets/img/profile-pic1.png";
-import profilePic2 from "../assets/img/profile-pic2.png";
+
+import profilePic2 from "../assets/img/profile-pic.png";
 import { ReactComponent as GithubIcon } from "../assets/icons/logo-github.svg";
 import { ReactComponent as LinkedInIcon } from "../assets/icons/logo-linkedin.svg";
 import { ReactComponent as WhatsappIcon } from "../assets/icons/logo-whatsapp.svg";
@@ -13,7 +13,7 @@ const About = () => {
       <div className='container'>
         <div className="profile__container">
           <div className="profile-pic">
-              <img src={profilePic1} alt="Profile of Me" title="Me" width="612" height="612" />
+              
               <img src={profilePic2} alt="Another Profile of Me" title="Me" width="612" height="612" />
           </div>
           <div className="about-text">
