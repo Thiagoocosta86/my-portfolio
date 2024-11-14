@@ -15,7 +15,7 @@ const Projects = () => {
             <article class="projects__card">
                 <img src={carCrashWebAppPic} alt="codingImg" title="" width="128" height="128" />
                 <div className="top-icon">
-                    <TopIcon width="30" height="30" title="Top Icon" alt="Top Icon" />
+                    <TopIcon width="30" height="30" alt="Top Icon" />
                 </div>
                 <div class="projects__modal">
                     <div>
@@ -34,7 +34,7 @@ const Projects = () => {
             <article class="projects__card">
                 <img src={codingImg} alt="codingImg" title="" width="128" height="128" />
                 <div className="top-icon">
-                    <TopIcon width="30" height="30" title="Top Icon" alt="Top Icon" />
+                    <TopIcon width="30" height="30" alt="Top Icon" />
                 </div>
                 <div class="projects__modal">
                     <div>
@@ -53,7 +53,7 @@ const Projects = () => {
             <article class="projects__card">
                 <img src={codingImg} alt="codingImg" title="" width="128" height="128" />
                 <div className="top-icon">
-                    <TopIcon width="30" height="30" title="Top Icon" alt="Top Icon" />
+                    <TopIcon width="30" height="30" alt="Top Icon" />
                 </div>
                 <div class="projects__modal">
                     <div>
@@ -72,7 +72,7 @@ const Projects = () => {
             <article class="projects__card">
                 <img src={codingImg} alt="codingImg" title="" width="128" height="128" />
                 <div className="top-icon">
-                    <TopIcon width="30" height="30" title="Top Icon" alt="Top Icon" />
+                    <TopIcon width="30" height="30" alt="Top Icon" />
                 </div>
                 <div class="projects__modal">
                     <div>
