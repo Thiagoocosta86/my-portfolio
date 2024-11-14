@@ -27,6 +27,8 @@ header {
   background-color: #86969C;
   padding-left: 20%;
   padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   
 }
 
@@ -416,6 +418,10 @@ main {
   padding: 1.5rem 1.25rem;
   transition: bottom 1s ease-in-out; /* Smooth transition */
   text-align: center;
+}
+
+.projects__subtitle {
+  font-weight: bolder;
 }
 
 .projects__description {
