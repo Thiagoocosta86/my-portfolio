@@ -254,7 +254,16 @@ main {
   /*border-top: 1px groove #979292;*/
   background-color: #86969C;
   border-radius: 0px 10px 10px 10px;
-  
+  transition: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .skills-panel, .certificates-panel {
@@ -262,8 +271,10 @@ main {
   flex-direction: column;
   align-items: center;
   height: 500px;
-  
+  animation: fadeIn 1s ease-in-out;
 }
+
+
 
 
 .skills-column {
@@ -375,99 +386,150 @@ main {
   row-gap: 80px;
 }
 
-/*PROJECTS*/
+  /*PROJECTS*/
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0; /* Adds space above and below the projects */
-  max-width: 1200px; /* Limit width for better alignment */
-  margin: 0 auto; /* Centers section within the page */
-  /*border: 4px solid #333;*/
-}
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0; /* Adds space above and below the projects */
+    max-width: 1200px; /* Limit width for better alignment */
+    margin: 0 auto; /* Centers section within the page */
+    /*border: 4px solid #333;*/
+  }
 
-.projects__card {
-  position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
+  .projects__card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+    border: 2px outset #96afb8;
+    width: 100%; /* Ensure image scales with the container */
+    height: 600px;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(-50%) translateY(0); /* Initial and resting position */
+    }
+    40% {
+      transform: translateX(-50%) translateY(-12px); /* Bounce up */
+    }
+    60% {
+      transform: translateX(-50%) translateY(-7px) ; /* Slightly lower bounce */
+    }
+  }
+
+  @keyframes colorChange {
+    0% {
+      fill:#86969c; /* Initial color */
+    }
+    50% {
+      fill: #97CBDC; /* Midway color */
+    }
+    100% {
+      fill: #97CBDC; /* Back to initial color */
+    }
+  }
+
+  .top-icon {
+    position: absolute;
+    top: 10px; /* Distance from the top of the card */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 2;
+    fill: #86969C;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1; /* Ensure the icon is visible initially */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    animation: bounce 4s infinite, colorChange 4s infinite;
+  }
   
-  border: 2px outset #96afb8;
-  width: 100%; /* Ensure image scales with the container */
-  height: 600px;
-}
+  /* Slide Up and Fade Out Icon on Hover */
+  .projects__card:hover .top-icon {
+    transform: translateX(-50%) translateY(-30px); /* Move icon upwards */
+    opacity: 0; /* Fade out */
+  }
 
-.projects__card img {
-  width: 100%; /* Ensure image scales with the container */
-  height: 600px;
-  object-fit: cover; /* Keeps image aspect consistent */
-}
+  .projects__card img {
+    width: 100%; /* Ensure image scales with the container */
+    height: 600px;
+    object-fit: cover; /* Keeps image aspect consistent */
+  }
 
-.projects__modal {
-  position: absolute;
-  bottom: -100%; /* Initially hidden below */
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Add overlay effect */
-  color: #86969C;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 1.25rem;
-  transition: bottom 1s ease-in-out; /* Smooth transition */
-  text-align: center;
-}
+  .projects__modal {
+    position: absolute;
+    bottom: -100%; /* Initially hidden below */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Add overlay effect */
+    color: #86969C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1.25rem;
+    transition: bottom 1s ease-in-out; /* Smooth transition */
+    text-align: center;
+  }
 
-.projects__subtitle {
-  font-weight: bolder;
-}
+  .projects__subtitle {
+    font-weight: bolder;
+  }
 
-.projects__description {
-  position: absolute;
-  bottom: -151px; /* Initially hidden */
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background-color: #86969C; /* Light background for contrast */
-  color: #004568; /* Text color */
-  padding: 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-  border-top: 1px solid #004568;
-  transition: bottom 0.7s ease-in-out;
-  display: flex;
-  justify-content: center;
-}
+  .projects__description {
+    position: absolute;
+    bottom: -151px; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #86969C; /* Light background for contrast */
+    color: #004568; /* Text color */
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #004568;
+    transition: bottom 0.7s ease-in-out;
+    display: flex;
+    justify-content: center;
+  }
 
-.projects__title {
-  color: #97CBDC;
-  margin-top: 0.5rem;
-}
+  .GithubIcon2{
+    fill: #86969C;
+  }
 
-.projects__button {
-  margin-top: 1rem; /* Space below the title */
-  color: #86969C;
-}
+  .GithubIcon2:hover svg {
+    transform: scale(1.1)
+  }
 
-.projects__card:hover .projects__modal {
-  bottom: 0; /* Slide modal to cover the image */
-}
+  .projects__title {
+    color: #97CBDC;
+    margin-top: 0.5rem;
+  }
 
-.projects__card:hover .projects__description {
-  bottom: 0; /* Slide it up partially when the card is hovered */
-}
+  .projects__button {
+    margin-top: 1rem; /* Space below the title */
+    color: #86969C;
+  }
 
-.projects__content {
-  display: flex;
-  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-  gap: 3rem; /* Space between items */
-  align-items: start;
-  justify-content: center;
-  padding: 2rem;
-  /*border: 4px solid #333;*/
-}
+  .projects__card:hover .projects__modal {
+    bottom: 0; /* Slide modal to cover the image */
+  }
+
+  .projects__card:hover .projects__description {
+    bottom: 0; /* Slide it up partially when the card is hovered */
+  }
+
+  .projects__content {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 3rem; /* Space between items */
+    align-items: start;
+    justify-content: center;
+    padding: 2rem;
+    /*border: 4px solid #333;*/
+  }
 
 
 
