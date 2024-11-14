@@ -413,7 +413,7 @@ main {
       transform: translateX(-50%) translateY(0); /* Initial and resting position */
     }
     40% {
-      transform: translateX(-50%) translateY(-12px); /* Bounce up */
+      transform: translateX(-50%) translateY(-50px); /* Bounce up */
     }
     60% {
       transform: translateX(-50%) translateY(-7px) ; /* Slightly lower bounce */
@@ -422,23 +422,23 @@ main {
 
   @keyframes colorChange {
     0% {
-      fill:#86969c; /* Initial color */
+      fill:#97CBDC; /* Initial color */
     }
-    50% {
+    65% {
       fill: #97CBDC; /* Midway color */
     }
     100% {
-      fill: #97CBDC; /* Back to initial color */
+      fill: transparent; /* Back to initial color */
     }
   }
 
   .top-icon {
     position: absolute;
-    top: 10px; /* Distance from the top of the card */
+    top: 300px; /* Distance from the top of the card */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
     z-index: 2;
-    fill: #86969C;
+    fill: #97CBDC;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 1; /* Ensure the icon is visible initially */
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
