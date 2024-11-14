@@ -254,7 +254,7 @@ main {
   /*border-top: 1px groove #979292;*/
   background-color: #86969C;
   border-radius: 0px 10px 10px 10px;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 @keyframes fadeIn {
