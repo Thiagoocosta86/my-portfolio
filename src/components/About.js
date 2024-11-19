@@ -17,7 +17,7 @@ const About = () => {
               <img src={profilePic2} alt="Another Profile of Me" title="Me" width="612" height="612" />
           </div>
           <div className="about-text">
-            <h2>About Me</h2>
+            <h3>About Me</h3>
             <p>{aboutText}</p>
           </div> 
         </div>
