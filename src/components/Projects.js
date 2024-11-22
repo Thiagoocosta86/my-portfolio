@@ -9,7 +9,7 @@ import { ReactComponent as TopIcon } from "../assets/icons/arrowhead-up.svg";
 
 const Projects = () => {
   return (
-    <section className="projects">
+    <section id="projects"className="projects">
       <h3>Projects</h3>
       <div class="projects__content grid filters__active " data-content id="projects">
             <article class="projects__card">

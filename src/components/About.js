@@ -9,7 +9,7 @@ import { ReactComponent as WhatsappIcon } from "../assets/icons/logo-whatsapp.sv
 
 const About = () => {
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className='container'>
         <div className="profile__container">
           <div className="profile-pic">
