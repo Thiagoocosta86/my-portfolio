@@ -108,8 +108,8 @@ main {
 
 .profile-pic {
   position: relative; /* Position the images relative to this container */
-  width: 700px; /* Set the width to the width of the images */
-  height: 700px; /* Set the height to the height of the images */
+  width: 450px; /* Set the width to the width of the images */
+  height: 450px; /* Set the height to the height of the images */
   border: 3.5px solid #86969C; /* Border styling */
   
   border-radius: 50%; /* Create a circular border */
@@ -189,7 +189,7 @@ main {
 }
 
 .EmailIcon:hover svg {
-  fill: #a55648; /* WhatsApp green */
+  fill: #ec260c; /* WhatsApp green */
   transform: scale(1.1)
 }
 
@@ -558,38 +558,15 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px;
   
   
-}
-.contact form {
-  display: flex;
-  flex-direction: column;
-  
-  
-  width: 1000px;
-  margin-bottom: 20PX;
 }
 
-.contact input,
-.contact textarea {
-  
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
-.contact button {
-  
-  padding: 10px;
-  background-color: #96CADB;
-  color: #39535C;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  
-  
-}
+
+
+
 
 footer {
   text-align: center;
