@@ -23,13 +23,13 @@ const About = () => {
         </div>
         <div className='social-media-links'>
           <ul className="social__profile">
-              <a className="social__profile-link LinkedInIcon" href="https://www.linkedin.com/in/thiago-costa-04443bb9/">
+              <a className="social__profile-link LinkedInIcon" href="https://www.linkedin.com/in/thiago-costa-04443bb9/" target="_blank" rel="noopener noreferrer">
                   <LinkedInIcon title="Linkedin" width="32" height="32" alt="LinkedIn" />
               </a>
-              <a className="social__profile-link GithubIcon" href="https://github.com/Thiagoocosta86">
+              <a className="social__profile-link GithubIcon" href="https://github.com/Thiagoocosta86" target="_blank" rel="noopener noreferrer">
                   <GithubIcon width="32" title="GitHub" height="32" alt="GitHub" />
               </a>
-              <a className="social__profile-link WhatsappIcon" href="https://api.whatsapp.com/send?phone=353871720557&text=Hello, more information!">
+              <a className="social__profile-link WhatsappIcon" href="https://api.whatsapp.com/send?phone=353871720557&text=Hello, more information!" target="_blank" rel="noopener noreferrer">
                   <WhatsappIcon title="Whatsapp" width="32" height="32" alt="Whatsapp"/>
               </a>
           </ul>

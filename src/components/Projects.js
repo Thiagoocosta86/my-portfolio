@@ -22,7 +22,7 @@ const Projects = () => {
                         <span class="projects__subtitle">Web/ML</span>
                         <h3 class="projects__title">Car Crash Fault Prediction</h3>
                         <a href="https://github.com/Thiagoocosta86/carCrashFaultPredictionApp.git"
-                            class="projects__button button button__small GithubIcon2">
+                            class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                             <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
@@ -41,7 +41,7 @@ const Projects = () => {
                         <span class="projects__subtitle">Java</span>
                         <h3 class="projects__title">RentACar</h3>
                         <a href="https://github.com/Thiagoocosta86/RentACar.git"
-                            class="projects__button button button__small GithubIcon2">
+                            class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                             <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
@@ -60,7 +60,7 @@ const Projects = () => {
                         <span class="projects__subtitle">XML-Node.js - ServerSide</span>
                         <h3 class="projects__title">ssp-ca3</h3>
                         <a href="https://github.com/Thiagoocosta86/ssp-ca3.git"
-                            class="projects__button button button__small GithubIcon2">
+                            class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                             <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
@@ -79,7 +79,7 @@ const Projects = () => {
                         <span class="projects__subtitle">Web</span>
                         <h3 class="projects__title">Electricity-Bill Calculator</h3>
                         <a href="https://github.com/tahrodriguess/Eletricity-Bill.git"
-                            class="projects__button button button__small GithubIcon2">
+                            class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                             <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
