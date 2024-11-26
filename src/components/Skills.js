@@ -157,31 +157,40 @@ const Skills = () => {
               
               <ul className="certificates">
                 <li>
-                  <img src={awsFoundations} alt="AWS Foundations" title="AWS Foundations" width="128" height="128" />
+                  <a href="https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url" target="_blank" rel="noopener noreferrer"> 
+                  <img src={awsFoundations} alt="AWS Foundations" title="AWS Foundations" width="128" height="128" /></a>
                 </li>
                 <li>
-                  <img src={awsGetStarted} alt="AWS Getting Started Cloud" title="AWS Getting Started with Cloud Operations" width="128" height="128" />
+                  <a href="https://www.credly.com/badges/ea5a1b5c-d9d6-400e-8e9a-d5ccbc792683/public_url" target="_blank" rel="noopener noreferrer">
+                  <img src={awsGetStarted} alt="AWS Getting Started Cloud Ops" title="AWS Getting Started with Cloud Operations" width="128" height="128" /></a>
                 </li>
                 <li>
-                  <img src={awsGetStartedCompute} alt="AWS Getting Started Compute" title="AWS Getting Started with Compute" width="128" height="128" />
+                  <a href="https://www.credly.com/badges/18bde2d6-8ec9-4129-8f07-055e143c25f3/public_url" target="_blank" rel="noopener noreferrer">
+                  <img src={awsGetStartedCompute} alt="AWS Getting Started Compute" title="AWS Getting Started with Compute" width="128" height="128" /></a>
                 </li>
                 <li>
-                  <img src={awsGetStartedNetworking} alt="AWS Get Started Networking" title="AWS Getting Started with Networking" width="128" height="128" />
+                  <a href="https://www.credly.com/badges/81de56b8-be2e-4f18-8105-c65296abe6ed/public_url" target="_blank" rel="noopener noreferrer">
+                  <img src={awsGetStartedNetworking} alt="AWS Get Started Networking" title="AWS Getting Started with Networking" width="128" height="128" /></a>
                 </li>
                 <li>
-                  <img src={awsGetStartedSecurity} alt="AWS Get Started Security" title="AWS Getting Started with Security" width="128" height="128" />
+                  <a href="https://www.credly.com/badges/c23da6a1-9d7f-40d4-8d06-f6b922ef92a6/public_url" target="_blank" rel="noopener noreferrer">
+                  <img src={awsGetStartedSecurity} alt="AWS Get Started Security" title="AWS Getting Started with Security" width="128" height="128" /></a>
                 </li>
                 <li>
-                  <img src={awsGetStartedServerless} alt="AWS Get Started Serverless" title="AWS Getting Started with Serverless" width="128" height="128" />
+                <a href="https://www.credly.com/badges/64b4c12f-8146-405f-9e28-8303c78f5240/public_url" target="_blank" rel="noopener noreferrer">
+                  <img src={awsGetStartedServerless} alt="AWS Get Started Serverless" title="AWS Getting Started with Serverless" width="128" height="128" /></a>
                 </li>
                 <li>
-                  <img src={awsGetStartedStorage} alt="AWS Get Started Storage" title="AWS Getting Started with Storage" width="128" height="128" />
+                  <a href="https://www.credly.com/badges/1221e47b-ae36-4275-8a42-3962a528afb1/public_url" target="_blank" rel="noopener noreferrer">
+                  <img src={awsGetStartedStorage} alt="AWS Get Started Storage" title="AWS Getting Started with Storage" width="128" height="128" /></a>
                 </li>
                 <li>
-                  <img src={awsIntroCloud101} alt="AWS Intro to Cloud 101" title="AWS Introduction to Cloud 101" width="128" height="128" />
+                  <a href="https://www.credly.com/badges/51091672-5109-43af-9e85-efdcf9ac4274/public_url" target="_blank" rel="noopener noreferrer">
+                  <img src={awsIntroCloud101} alt="AWS Intro to Cloud 101" title="AWS Introduction to Cloud 101" width="128" height="128" /></a>
                 </li>
                 <li>
-                  <img src={awsFoundationsCertificate} alt="AWS Foundations Certificate" title="AWS Foundations Certificate" width="200" height="150" />
+                  <a href="https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url" target="_blank" rel="noopener noreferrer">
+                  <img src={awsFoundationsCertificate} alt="AWS Foundations Certificate" title="AWS Foundations Certificate" width="200" height="150" /></a>
                 </li>
               </ul>
             </div>
