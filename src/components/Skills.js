@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 /*Frontend Icons*/
 import { ReactComponent as Html } from '../assets/icons/html-colour.svg';
@@ -15,53 +15,13 @@ import { ReactComponent as Mongodb } from '../assets/icons/mongodb-colour.svg';
 import { ReactComponent as Mysql } from '../assets/icons/mysql-colour.svg';
 
 
-import awsFoundations from "../assets/img/aws-academy-cloud-foundations.png";
-import awsGetStarted from "../assets/img/aws-getting-started-with-cloud-ops.png";
-import awsGetStartedCompute from "../assets/img/aws-getting-started-with-compute.png";
-import awsGetStartedNetworking from "../assets/img/aws-getting-started-with-networking.png";
-import awsGetStartedSecurity from "../assets/img/aws-getting-started-with-security.png";
-import awsGetStartedServerless from "../assets/img/aws-getting-started-with-serverless.png";
-import awsGetStartedStorage from "../assets/img/aws-getting-started-with-storage.png";
-import awsIntroCloud101 from "../assets/img/aws-introduction-to-cloud-101.png";
-import awsFoundationsCertificate from "../assets/img/AWS-graduate-Academy-Cloud-Foundations.png";
-
-
 
 
 const Skills = () => {
-  const [currentTab, setCurrentTab] = useState(0);
-
-  useEffect(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash === 'certificates') {
-      setCurrentTab(1);
-    } else {
-      setCurrentTab(0);
-    }
-  }, []);    
-
+  
   return (
-    <section className="skills">
-      {/* Tab Navigation */}
-      <div className="tab-header">
-        <button
-          className={`tab-button ${currentTab === 0 ? 'active' : ''}`}
-          onClick={() => setCurrentTab(0)}
-        >
-          Skills
-        </button>
-        <button
-          className={`tab-button ${currentTab === 1 ? 'active' : ''}`}
-          onClick={() => setCurrentTab(1)}
-        >
-          Certificates
-        </button>
-      </div>
-
-      {/* Tab Content */}
-      <div id="skills" className={`tab-content ${currentTab === 0 ? 'active' : ''}`}>
-        {currentTab === 0 && (
-          <div className="skills-panel">
+    <section id="skills" className="skills">
+      <div className="skills-panel">
             <h3>Skills</h3>
             <div className="skills-column hard-skills-panel">
               <div className="frontend-column">
@@ -148,54 +108,6 @@ const Skills = () => {
               </div>
             </div>
           </div>
-        )}
-        </div>
-        <div id="certificates" className={`tab-content ${currentTab === 1 ? 'active' : ''}`}>
-          {currentTab === 1 && (
-            <div className="certificates-panel">
-              <h3>Certificates</h3>
-              
-              <ul className="certificates">
-                <li>
-                  <a href="https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url" target="_blank" rel="noopener noreferrer"> 
-                  <img src={awsFoundations} alt="AWS Foundations" title="AWS Foundations" width="128" height="128" /></a>
-                </li>
-                <li>
-                  <a href="https://www.credly.com/badges/ea5a1b5c-d9d6-400e-8e9a-d5ccbc792683/public_url" target="_blank" rel="noopener noreferrer">
-                  <img src={awsGetStarted} alt="AWS Getting Started Cloud Ops" title="AWS Getting Started with Cloud Operations" width="128" height="128" /></a>
-                </li>
-                <li>
-                  <a href="https://www.credly.com/badges/18bde2d6-8ec9-4129-8f07-055e143c25f3/public_url" target="_blank" rel="noopener noreferrer">
-                  <img src={awsGetStartedCompute} alt="AWS Getting Started Compute" title="AWS Getting Started with Compute" width="128" height="128" /></a>
-                </li>
-                <li>
-                  <a href="https://www.credly.com/badges/81de56b8-be2e-4f18-8105-c65296abe6ed/public_url" target="_blank" rel="noopener noreferrer">
-                  <img src={awsGetStartedNetworking} alt="AWS Get Started Networking" title="AWS Getting Started with Networking" width="128" height="128" /></a>
-                </li>
-                <li>
-                  <a href="https://www.credly.com/badges/c23da6a1-9d7f-40d4-8d06-f6b922ef92a6/public_url" target="_blank" rel="noopener noreferrer">
-                  <img src={awsGetStartedSecurity} alt="AWS Get Started Security" title="AWS Getting Started with Security" width="128" height="128" /></a>
-                </li>
-                <li>
-                <a href="https://www.credly.com/badges/64b4c12f-8146-405f-9e28-8303c78f5240/public_url" target="_blank" rel="noopener noreferrer">
-                  <img src={awsGetStartedServerless} alt="AWS Get Started Serverless" title="AWS Getting Started with Serverless" width="128" height="128" /></a>
-                </li>
-                <li>
-                  <a href="https://www.credly.com/badges/1221e47b-ae36-4275-8a42-3962a528afb1/public_url" target="_blank" rel="noopener noreferrer">
-                  <img src={awsGetStartedStorage} alt="AWS Get Started Storage" title="AWS Getting Started with Storage" width="128" height="128" /></a>
-                </li>
-                <li>
-                  <a href="https://www.credly.com/badges/51091672-5109-43af-9e85-efdcf9ac4274/public_url" target="_blank" rel="noopener noreferrer">
-                  <img src={awsIntroCloud101} alt="AWS Intro to Cloud 101" title="AWS Introduction to Cloud 101" width="128" height="128" /></a>
-                </li>
-                <li>
-                  <a href="https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url" target="_blank" rel="noopener noreferrer">
-                  <img src={awsFoundationsCertificate} alt="AWS Foundations Certificate" title="AWS Foundations Certificate" width="200" height="150" /></a>
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
     </section>
   );
 };
