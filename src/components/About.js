@@ -3,9 +3,7 @@ import {aboutText} from '../data/dataText';
 
 
 import profilePic2 from "../assets/img/profile-pic.png";
-import { ReactComponent as GithubIcon } from "../assets/icons/logo-github.svg";
-import { ReactComponent as LinkedInIcon } from "../assets/icons/logo-linkedin.svg";
-import { ReactComponent as WhatsappIcon } from "../assets/icons/logo-whatsapp.svg";
+
 
 const About = () => {
   return (
@@ -22,19 +20,7 @@ const About = () => {
           </div>
           
         </div>
-        <div className='social-media-links'>
-          <ul className="social__profile">
-              <a className="social__profile-link LinkedInIcon" href="https://www.linkedin.com/in/thiago-costa-04443bb9/" target="_blank" rel="noopener noreferrer">
-                  <LinkedInIcon title="Linkedin" width="32" height="32" alt="LinkedIn" />
-              </a>
-              <a className="social__profile-link GithubIcon" href="https://github.com/Thiagoocosta86" target="_blank" rel="noopener noreferrer">
-                  <GithubIcon width="32" title="GitHub" height="32" alt="GitHub" />
-              </a>
-              <a className="social__profile-link WhatsappIcon" href="https://api.whatsapp.com/send?phone=353871720557&text=Hello, more information!" target="_blank" rel="noopener noreferrer">
-                  <WhatsappIcon title="Whatsapp" width="32" height="32" alt="Whatsapp"/>
-              </a>
-          </ul>
-        </div>
+        
       </div>    
     </section>
   );

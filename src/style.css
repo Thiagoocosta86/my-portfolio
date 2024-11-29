@@ -93,9 +93,9 @@ main {
 
 /*Hero(pic) style*/
 
-.container{
+/*.container{
   border: 4px solid #2ba03e;
-}
+}*/
 
 .profile__container {
   
@@ -105,7 +105,7 @@ main {
   flex-wrap: wrap;
   height: auto;
   /*border: 4px solid #2ba03e;*/
-  border: 4px solid #2ba03e;
+  
 }
 
 
@@ -162,51 +162,9 @@ main {
   text-align: center;
 }
 /*Social Media style*/
-.social-media-links {
-  display: flex;
-  justify-content: space-around;
-  /*border: 4px solid #9c2222;*/
-  margin-top: 50px;
-  
-}
-
-.social__profile {
-  display: flex; /* Use flexbox to enable gap */
-  gap: 3rem; /* Add space between the items */
-  list-style: none; /* Remove bullet points */
-  padding: 0;
-}
 
 
-.social__profile-link svg {
-  fill: #39535C;
-    /* Default color for all icons */
-  transition: fill 1s ease; transform: 1s;
-  transform: scale(1)
-}
 
-
-.LinkedInIcon:hover svg {
-  fill: #0A66C2; /* LinkedIn blue */
-  transform: scale(1.1)
-}
-
-
-.GithubIcon:hover svg {
-  fill: #111111; /* GitHub Black*/
-  transform: scale(1.1)
-}
-
-
-.WhatsappIcon:hover svg {
-  fill: #00A884; /* WhatsApp green */
-  transform: scale(1.1)
-}
-
-.EmailIcon:hover svg {
-  fill: #ec260c; /* WhatsApp green */
-  transform: scale(1.1)
-}
 
 /*SKILLS*/
 .skills, .certificates-container{
@@ -576,8 +534,66 @@ main {
   
 }
 
+.floating-contact {
+  position: fixed; /* Keeps the element fixed while scrolling */
+  top: 50%; /* Start at the top of the viewport */
+  left: 0; /* Align it to the left */
+  width: 100px; /* Set an appropriate width */
+  padding: 20px; /* Add some padding */
+  background-color: #F5F5F5; /* Background color matching your theme */
+  
+  animation: float 4s ease-in-out infinite; /* Add a floating animation */
+  
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Starting position */
+  }
+  50% {
+    transform: translateY(20px); /* Float down */
+  }
+}
+
+.contact-links{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
 
+
+.social__profile-link svg {
+  fill: #39535C;
+    /* Default color for all icons */
+  transition: fill 1s ease; transform: 1s;
+  transform: scale(1)
+}
+
+
+.LinkedInIcon:hover svg {
+  fill: #0A66C2; /* LinkedIn blue */
+  transform: scale(1.1)
+}
+
+
+.GithubIcon:hover svg {
+  fill: #111111; /* GitHub Black*/
+  transform: scale(1.1)
+}
+
+
+.WhatsappIcon:hover svg {
+  fill: #00A884; /* WhatsApp green */
+  transform: scale(1.1)
+}
+
+.EmailIcon:hover svg {
+  fill: #ec260c; /* WhatsApp green */
+  transform: scale(1.1)
+}
 
 
 
