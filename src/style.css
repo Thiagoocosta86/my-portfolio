@@ -540,8 +540,9 @@ main {
   left: 0; /* Align it to the left */
   width: 100px; /* Set an appropriate width */
   padding: 20px; /* Add some padding */
-  background-color: #F5F5F5; /* Background color matching your theme */
-  
+  background-color: #96CADB; /* Background color matching your theme */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 15px 15px 0px;
   animation: float 4s ease-in-out infinite; /* Add a floating animation */
   
 }
