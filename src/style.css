@@ -347,7 +347,7 @@ main {
   display: none;
   height: 500px;
   animation: fadeIn 1s ease-in-out;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .certificates-panel.active {
@@ -355,7 +355,7 @@ main {
   opacity: 1;
 }
 
-.certificates {
+.aws-certificates {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -363,6 +363,18 @@ main {
   gap: 20px;
   padding: 0;
   margin: 0;
+  row-gap: 30px;
+}
+
+.azure-certificates {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
   row-gap: 30px;
 }
 

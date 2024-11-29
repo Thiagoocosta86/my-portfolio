@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+/*AWS Certificates*/
 import awsFoundations from "../assets/img/aws-academy-cloud-foundations.png";
 import awsGetStarted from "../assets/img/aws-getting-started-with-cloud-ops.png";
 import awsGetStartedCompute from "../assets/img/aws-getting-started-with-compute.png";
@@ -8,6 +10,11 @@ import awsGetStartedServerless from "../assets/img/aws-getting-started-with-serv
 import awsGetStartedStorage from "../assets/img/aws-getting-started-with-storage.png";
 import awsIntroCloud101 from "../assets/img/aws-introduction-to-cloud-101.png";
 import awsFoundationsCertificate from "../assets/img/AWS-graduate-Academy-Cloud-Foundations.png";
+
+/*Azure Certificates*/
+import azureDescCloudCompu from "../assets/img/azure-DescribeCloudComputing.png";
+import azureDescCloudServices from "../assets/img/azure-DescribeCloudServiceTypes.png";
+import azureDescBenef from "../assets/img/azure-DescribeBenefitsOfCloudServices.png";
 
 const awsCertificates = [
   { src: awsFoundations, url: "https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url", alt: "AWS Foundations", title: "AWS Foundations" },
@@ -20,6 +27,15 @@ const awsCertificates = [
   { src: awsIntroCloud101, url: "https://www.credly.com/badges/51091672-5109-43af-9e85-efdcf9ac4274/public_url", alt: "AWS Cloud 101", title: "AWS Cloud 101" },
   { src: awsFoundationsCertificate, url: "https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url", alt: "AWS Foundations Certificate", title: "AWS Foundations Certificate" }
 ];
+
+
+const azureCertificates = [
+  { src: azureDescCloudCompu, url: "https://learn.microsoft.com/api/achievements/share/en-us/ThiagoCosta-9234/HAV63VE8?sharingId=459220D993E9D11A", alt: "Azure Cloud Computing", title: "Azure Cloud Computing" },
+  { src: azureDescCloudServices, url: "https://learn.microsoft.com/en-us/users/thiagocosta-9234/achievements/aptvkha7", alt: "Azure Cloud Services", title: "Azure Cloud Services" },
+  { src: azureDescBenef, url: "https://learn.microsoft.com/api/achievements/share/en-us/ThiagoCosta-9234/ZK5QK6E2?sharingId=459220D993E9D11A", alt: "Azure Cloud Benefits", title: "Azure Cloud Benefits" }
+
+];
+
 
 const Certificates = () => {
   const [currentTab, setCurrentTab] = useState(0);
@@ -43,7 +59,8 @@ const Certificates = () => {
       </div>
       <div className="tab-content">
         <div className={`certificates-panel ${currentTab === 0 ? "active" : ""}`}>
-          <ul className="certificates">
+        <p>AWS Badges and Certificates.</p>
+          <ul className="aws-certificates">
             {awsCertificates.map((cert, index) => (
               <li key={index}>
                 <a href={cert.url} target="_blank" rel="noopener noreferrer">
@@ -54,7 +71,16 @@ const Certificates = () => {
           </ul>
         </div>
         <div className={`certificates-panel ${currentTab === 1 ? "active" : ""}`}>
-          <p>Azure certificates coming soon!</p>
+          <p>AZURE Badges and Certificates.</p>
+          <ul className="azure-certificates">
+            {azureCertificates.map((cert, index) => (
+              <li key={index}>
+                <a href={cert.url} target="_blank" rel="noopener noreferrer">
+                  <img src={cert.src} alt={cert.alt} title={cert.title} width="300" height="200" />
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
