@@ -596,6 +596,38 @@ main {
   transform: scale(1.1)
 }
 
+.arrow-up-btn {
+  position: fixed;
+  bottom: 400px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  background-color: #96CADB;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it stays on top */
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.arrow-up-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: #39535C; /* Icon color */
+}
+
+.arrow-up-btn:hover {
+  transform: scale(1.1);
+  background-color: #39535C;
+}
+
+.arrow-up-btn svg:hover {
+  fill: #F5F5F5; /* Change icon color on hover */
+}
 
 
 footer {

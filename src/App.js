@@ -3,7 +3,6 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Certificates from './components/Certificates';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import './style.css'; // Include your CSS here
@@ -17,7 +16,6 @@ const App = () => {
       <Skills />
       <Certificates/>
       <Projects />
-      <Contact />
       </main>
       <Footer />
     </div>
