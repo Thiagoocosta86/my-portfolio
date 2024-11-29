@@ -1,10 +1,18 @@
 const aboutText = 
     `
-    Hi! I'm Thiago, an IT student at CCT College Dublin.
-    Over the past three years, I've been challenging myself in the field of Information Technology. 
-    From learning programming fundamentals to exploring database management, networking, and other things, I have tried to gain a strong base in IT.
-    I've also sought practical experience through online courses.
-    Now, as I approach the end of my studies, I am excited to apply my knowledge and skills and make a positive impact in the IT industry. 
+     <p>Hi! I'm a tech enthusiast, with a strong foundation in Computer Science, based in Dublin, Ireland. 
+  With a passion for innovation and problem-solving, I’ve delved deep into the world of technology, graduating 
+  with a solid academic background and I've also sought practical experience through online courses.</p>
+  
+  <p>Currently, I’m channeling my expertise into cloud computing, exploring its limitless potential to drive 
+  efficiency and scalability. I thrive on learning about cutting-edge tools, architecting solutions, and 
+  optimizing workflows in the cloud space.</p>
+  
+  <p>Outside of tech, I enjoy spending some quality time with family and friends, and I’m always open to 
+  connecting with like-minded individuals to share knowledge and experiences.</p>
+  
+  <p>Let’s build something amazing together!</p>
+ 
 `
 ;
 

@@ -12,14 +12,15 @@ const About = () => {
     <section id="home" className="hero">
       <div className='container'>
         <div className="profile__container">
+        <div className="about-text">
+            <h3>About Me</h3>
+            <div className="about-text" dangerouslySetInnerHTML={{ __html: aboutText }} />
+          </div> 
           <div className="profile-pic">
               
               <img src={profilePic2} alt="Another Profile of Me" title="Me" width="612" height="612" />
           </div>
-          <div className="about-text">
-            <h3>About Me</h3>
-            <p>{aboutText}</p>
-          </div> 
+          
         </div>
         <div className='social-media-links'>
           <ul className="social__profile">
