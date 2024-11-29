@@ -622,7 +622,7 @@ main {
 
 .arrow-up-btn:hover {
   transform: scale(1.1);
-  background-color: #39535C;
+  border: 1px solid #39535C;
 }
 
 .arrow-up-btn svg:hover {
