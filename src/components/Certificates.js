@@ -59,7 +59,7 @@ const Certificates = () => {
       </div>
       <div className="tab-content">
         <div className={`certificates-panel ${currentTab === 0 ? "active" : ""}`}>
-        <p>AWS Badges and Certificates.</p>
+        
           <ul className="aws-certificates">
             {awsCertificates.map((cert, index) => (
               <li key={index}>
@@ -71,7 +71,7 @@ const Certificates = () => {
           </ul>
         </div>
         <div className={`certificates-panel ${currentTab === 1 ? "active" : ""}`}>
-          <p>AZURE Badges and Certificates.</p>
+          
           <ul className="azure-certificates">
             {azureCertificates.map((cert, index) => (
               <li key={index}>

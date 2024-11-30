@@ -45,7 +45,7 @@ const Footer = () => {
                   <GithubIcon2 width="32" title="GitHub" height="32" alt="GitHub" />
               </a>
               <a className="social__profile-link EmailIcon" href="mailto:thiagodeodacosta@gmail.com" target="_blank" rel="noopener noreferrer">
-                <EmailIcon className="email-icon" width="32" title="thiagodeodacosta@gmail.com" height="32" alt="Email" />
+                <EmailIcon className="email-icon" width="32" height="32" title="thiagodeodacosta@gmail.com"  alt="Email" />
               </a>
               <a className="social__profile-link WhatsappIcon" href="https://api.whatsapp.com/send?phone=353871720557&text=Hello, more information!" target="_blank" rel="noopener noreferrer">
                   <WhatsappIcon title="Whatsapp" width="32" height="32" alt="Whatsapp"/>
@@ -53,8 +53,8 @@ const Footer = () => {
           </ul>
         </div>
         {showArrow && (
-        <button className="arrow-up-btn" onClick={scrollToTop}>
-          <img src={arrowUp} width="32" height="32" alt="arrow-up" />
+        <button onClick={scrollToTop}>
+          <img className="arrow-up-btn" src={arrowUp} width="32" height="32" alt="arrow-up" />
         </button>
       )}
     </section>
