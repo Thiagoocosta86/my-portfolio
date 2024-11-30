@@ -19,7 +19,7 @@ const aboutText =
 
 const carCrashWebApp =
     `
-        Web application that based on 18 variables can predict with 85% accuracy if a driver is at fault or not. <b>Click on the GitHub icon to learn more.</b>
+        Web application that based on 18 variables can predict with 85% accuracy if a driver is at fault or not. <b>Learn more...</b>
     `
 
     

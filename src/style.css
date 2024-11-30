@@ -67,6 +67,7 @@ nav ul li a {
   color: #39535C;
   font-weight: bold;
   font-family: "Oxanium", sans-serif;
+  font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -324,7 +325,9 @@ main {
   border: 2px outset #97CBDC;
   transition: box-shadow 0.3s ease;
   font-family: "Oxanium", sans-serif;
+  font-size: 1.4rem;
   margin-bottom: -15px;
+
 }
 
 .tab-button.active {
@@ -475,8 +478,10 @@ main {
     text-align: center;
   }
 
+  
   .projects__subtitle {
     font-weight: bolder;
+    font-size: 1.4rem;
   }
 
   .projects__description {
@@ -489,7 +494,7 @@ main {
     color: #39535C; /* Text color */
     padding: 1rem;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     border-top: 1px solid #96CADB;
     transition: bottom 0.3s ease-in-out;
     display: flex;
@@ -648,6 +653,7 @@ footer {
   padding: 20px;
   background-color: #96CADB;
   color: #39535C;
+  font-size: 1.2rem;
 }
 
 .skills, .certificates-container, .projects, .contact{
