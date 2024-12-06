@@ -4,7 +4,7 @@ import {carCrashWebApp} from '../data/dataText';
 
 import codingImg from "../assets/img/underConstruction.png";
 import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
-import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github2.svg";
+import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
 import { ReactComponent as TopIcon } from "../assets/icons/arrowhead-up.svg";
 
 const Projects = () => {
