@@ -636,6 +636,12 @@ main {
   transform: scale(1.1)
 }
 
+
+button {
+  all: unset; /* Resets all inherited styles */
+  cursor: pointer; /* Ensures the button retains pointer behavior */
+}
+
 .arrow-up-btn {
   fill: #39535C;
   position: fixed;

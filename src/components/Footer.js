@@ -56,7 +56,7 @@ const Footer = () => {
         <button onClick={scrollToTop}>
           <img className="arrow-up-btn" src={arrowUp} width="32" height="32" alt="arrow-up" />
         </button>
-      )}
+        )}
     </section>
     <footer>
       <p>&copy; 2024 My Portfolio</p>
