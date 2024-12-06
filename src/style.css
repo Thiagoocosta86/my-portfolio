@@ -24,7 +24,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #39535C;
-  background-color: #F5F5F5;
+  background: linear-gradient(#96CADB,#F5F5F5,#96CADB);
   
   /*border: 4px solid #333; */
 }
@@ -343,6 +343,7 @@ main {
   background-color: #96CADB;
   border-radius: 0px 10px 10px 10px;
   transition: 0.3s;
+
   
 }
 
@@ -350,41 +351,63 @@ main {
   display: none;
   height: 500px;
   animation: fadeIn 1s ease-in-out;
-  padding: 10px;
+  padding: 100px;
 }
+
 
 .certificates-panel.active {
   display: block;
   opacity: 1;
 }
 
-.aws-certificates {
-  list-style: none;
+.certificates{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-  row-gap: 30px;
+  height: 350px;
+  /*border: 4px solid #333;*/
 }
 
-.azure-certificates {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-  margin-top: 15px;
-  row-gap: 30px;
+.certificates .swiper-slide img {
+  width: 290px;
+  height: 290px;
+  object-fit: contain; 
+  margin: auto; 
+  
 }
 
-.certificates li {
-  flex: 1 1 128px;
-  max-width: 128px;
+.swiper-button-next,
+.swiper-button-prev {
+  color: #39535c; /* Button color */
+    
 }
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  
+  transform: scale(1.2)
+}
+
+.swiper-pagination {
+  margin-bottom: -15px;/* Position below the swiper */
+  padding: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: #b4cbd3; /* Bullet color */
+  width: 12px;
+  height: 12px;
+  background-color: #39535c;
+  opacity: 0.4;
+  
+}
+
+.swiper-pagination-bullet-active {
+  background: #39535c; /* Active bullet color */
+  opacity: 1;
+  transform: scale(1.2)
+}
+
+
+
 
   /*PROJECTS*/
 
@@ -626,17 +649,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  
   z-index: 1000; /* Ensure it stays on top */
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.arrow-up-btn {
-  width: 40px;
-  height: 40px;
-  fill: #39535C; /* Icon color */
-}
+
 
 .arrow-up-btn:hover {
   transform: scale(1.1);

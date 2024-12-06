@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 
+import { Navigation, Pagination} from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css/bundle';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 /*AWS Certificates*/
 import awsFoundations from "../assets/img/aws-academy-cloud-foundations.png";
 import awsGetStarted from "../assets/img/aws-getting-started-with-cloud-ops.png";
+import awsGetStartedDatabases from "../assets/img/aws-getting-started-with-databases.png";
 import awsGetStartedCompute from "../assets/img/aws-getting-started-with-compute.png";
 import awsGetStartedNetworking from "../assets/img/aws-getting-started-with-networking.png";
 import awsGetStartedSecurity from "../assets/img/aws-getting-started-with-security.png";
@@ -19,6 +29,7 @@ import azureDescBenef from "../assets/img/azure-DescribeBenefitsOfCloudServices.
 const awsCertificates = [
   { src: awsFoundations, url: "https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url", alt: "AWS Foundations", title: "AWS Foundations" },
   { src: awsGetStarted, url: "https://www.credly.com/badges/ea5a1b5c-d9d6-400e-8e9a-d5ccbc792683/public_url", alt: "AWS Getting Started Cloud Ops", title: "AWS Cloud Ops" },
+  { src: awsGetStartedDatabases, url: "https://www.credly.com/badges/5f403a28-bb2d-446f-b4dd-9ffafaaf54d6/public_url", alt: "AWS Getting Started Databases", title: "AWS Databases" },
   { src: awsGetStartedCompute, url: "https://www.credly.com/badges/18bde2d6-8ec9-4129-8f07-055e143c25f3/public_url", alt: "AWS Compute", title: "AWS Compute" },
   { src: awsGetStartedNetworking, url: "https://www.credly.com/badges/81de56b8-be2e-4f18-8105-c65296abe6ed/public_url", alt: "AWS Networking", title: "AWS Networking" },
   { src: awsGetStartedSecurity, url: "https://www.credly.com/badges/c23da6a1-9d7f-40d4-8d06-f6b922ef92a6/public_url", alt: "AWS Security", title: "AWS Security" },
@@ -40,6 +51,20 @@ const azureCertificates = [
 const Certificates = () => {
   const [currentTab, setCurrentTab] = useState(0);
 
+  const renderSwiperSlides = (certificates) =>
+    certificates.map((cert, index) => (
+      <SwiperSlide key={index}>
+        <a
+          className="card-link"
+          href={cert.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={cert.src} alt={cert.alt} title={cert.title} width="300" height="200" />
+        </a>
+      </SwiperSlide>
+    ));
+
   return (
     <section id="certificates" className="certificates-container">
       <h3>Certificates</h3>
@@ -58,29 +83,26 @@ const Certificates = () => {
         </button>
       </div>
       <div className="tab-content">
-        <div className={`certificates-panel ${currentTab === 0 ? "active" : ""}`}>
-        
-          <ul className="aws-certificates">
-            {awsCertificates.map((cert, index) => (
-              <li key={index}>
-                <a href={cert.url} target="_blank" rel="noopener noreferrer">
-                  <img src={cert.src} alt={cert.alt} title={cert.title} width="128" height="128" />
-                </a>
-              </li>
-            ))}
-          </ul>
+      <div className={`certificates-panel ${currentTab === 0 ? "active" : ""}`}>
+          <Swiper className="aws certificates"
+            modules={[Navigation, Pagination]}
+            navigation
+            pagination={{ clickable: true, dynamicBullets: true }}
+            slidesPerView={2}
+          >
+            {renderSwiperSlides(awsCertificates)}
+          </Swiper>
         </div>
+
         <div className={`certificates-panel ${currentTab === 1 ? "active" : ""}`}>
-          
-          <ul className="azure-certificates">
-            {azureCertificates.map((cert, index) => (
-              <li key={index}>
-                <a href={cert.url} target="_blank" rel="noopener noreferrer">
-                  <img src={cert.src} alt={cert.alt} title={cert.title} width="300" height="200" />
-                </a>
-              </li>
-            ))}
-          </ul>
+          <Swiper className="azure certificates"
+            modules={[Navigation, Pagination]}
+            navigation
+            pagination={{ clickable: true }}
+            slidesPerView={2}
+          >
+            {renderSwiperSlides(azureCertificates)}
+          </Swiper>
         </div>
       </div>
     </section>
