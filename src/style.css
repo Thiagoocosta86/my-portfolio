@@ -601,7 +601,7 @@ main {
     /*border: 4px solid #333;*/
   }
 
-  [id^='Sound-']{
+  [id^='Sound-'], [id^='Smoke-'] {
     animation: pulse 1s ease-in-out infinite alternate;
   }
 
@@ -613,7 +613,8 @@ main {
       stroke: #86969C; /* Example color */
     }
     100% {
-      stroke: #96CADB;
+      stroke: #86969C;
+      
     }
   }
   
