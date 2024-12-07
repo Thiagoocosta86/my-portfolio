@@ -59,7 +59,7 @@ svg text {
 
 svg text.text-body {
   stroke: #39535C;
-  animation: 3s 2 alternate animate-stroke;
+  animation: 2s 2 alternate animate-stroke;
   
 }
 
