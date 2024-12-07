@@ -464,7 +464,7 @@ main {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    
+    background-color: #96CADB;
     border: 2px outset #96AAB1;
     width: 100%; /* Ensure image scales with the container */
     height: 600px;
@@ -511,6 +511,12 @@ main {
   .projects__card:hover .top-icon {
     transform: translateX(-50%) translateY(-30px); /* Move icon upwards */
     opacity: 0; /* Fade out */
+  }
+
+  .projects__card .coding-img {
+    width: 100%; /* Ensure image scales with the container */
+    height: 600px;
+    object-fit: cover; /* Keeps image aspect consistent */
   }
 
   .projects__card img {
@@ -595,9 +601,22 @@ main {
     /*border: 4px solid #333;*/
   }
 
+  [id^='Sound-']{
+    animation: pulse 1s ease-in-out infinite alternate;
+  }
 
-
-
+  @keyframes pulse {
+    0% {
+      stroke: #96CADB;
+    }
+    50% {
+      stroke: #86969C; /* Example color */
+    }
+    100% {
+      stroke: #96CADB;
+    }
+  }
+  
 
 /*CONTACT*/
 .contact{

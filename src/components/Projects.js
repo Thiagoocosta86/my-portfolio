@@ -2,10 +2,11 @@ import React from 'react';
 
 import {carCrashWebApp} from '../data/dataText';
 
-import codingImg from "../assets/img/underConstruction.png";
+
 import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
 import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
 import { ReactComponent as TopIcon } from "../assets/icons/arrowhead-up.svg";
+import { ReactComponent as CodingImg } from "../assets/img/underConstruction.svg";
 
 const Projects = () => {
   return (
@@ -32,7 +33,7 @@ const Projects = () => {
                 </div>
             </article>
             <article class="projects__card">
-                <img src={codingImg} alt="codingImg" title="" width="128" height="128" />
+                <CodingImg className="coding-img" title="Under Construction" width="128" height="128" />
                 <div className="top-icon">
                     <TopIcon width="30" height="30" title="" alt="Top Icon" />
                 </div>
@@ -51,7 +52,7 @@ const Projects = () => {
                 </div>
             </article>
             <article class="projects__card">
-                <img src={codingImg} alt="codingImg" title="" width="128" height="128" />
+                <CodingImg className="coding-img" title="Under Construction" width="128" height="128" />
                 <div className="top-icon">
                     <TopIcon width="30" height="30" title="" alt="Top Icon" />
                 </div>
@@ -70,7 +71,7 @@ const Projects = () => {
                 </div>
             </article>
             <article class="projects__card">
-                <img src={codingImg} alt="codingImg" title="" width="128" height="128" />
+                <CodingImg className="coding-img" title="Under Construction" width="128" height="128" />
                 <div className="top-icon">
                     <TopIcon width="30" height="30" title="" alt="Top Icon" />
                 </div>
