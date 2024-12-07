@@ -617,6 +617,11 @@ main {
       
     }
   }
+
+  #Smoke-1 {animation-delay: 1s;}
+  #Smoke-2 {animation-delay: 2s;}
+  #Smoke-3 {animation-delay: 2.5s;}
+  #Smoke-4 {animation-delay: 1.5s;}
   
 
 /*CONTACT*/
