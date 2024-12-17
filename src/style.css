@@ -668,7 +668,8 @@ main {
 
   .GithubIcon2 svg {
     fill: var(--light-color);
-    
+    height: 30px;
+    width: 30px;
   }
 
   .GithubIcon2:hover svg {
