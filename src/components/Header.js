@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="logo">
+      <div id="home" className="logo">
         <svg viewBox="0 0 1000 160">
           <text x="50%" y="50%" dy=".32em" textAnchor="middle" className="text-body">
             THIAGO COSTA

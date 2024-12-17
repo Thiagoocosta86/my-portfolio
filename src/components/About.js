@@ -7,7 +7,7 @@ import profilePic2 from "../assets/img/profile-pic.png";
 
 const About = () => {
   return (
-    <section id="home" className="hero">
+    <section  className="hero">
       <div className='container'>
         <div className="profile__container">
         <div className="about-text">
