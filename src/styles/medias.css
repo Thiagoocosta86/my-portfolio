@@ -97,4 +97,8 @@
     line-height: 1.4; /* Adjust line spacing */
     
   }
+
+  .skills, .certificates-container, .projects, .contact{
+    padding-top: 50px;
+  }
   }
