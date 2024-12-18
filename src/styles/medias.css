@@ -3,6 +3,10 @@
 
 @media (max-width: 768px) {
 
+    h3{
+        font-size: 1.5rem;
+    }
+
     /*Navbar*/
     header {
       flex-direction: column;
@@ -97,6 +101,28 @@
     line-height: 1.4; /* Adjust line spacing */
     
   }
+
+  /*Skills*/
+
+  .skills h4{
+    font-size: 1.1rem;
+  }
+
+  .knowledge-level {
+      display: none; /* Hide progress bars */
+  }
+
+
+  
+  .frontend-skills li, .backend-skills li {
+  
+    display: block;
+    font-size: 0.9rem;
+    position: relative;
+    
+  }
+
+  
 
   .skills, .certificates-container, .projects, .contact{
     padding-top: 50px;

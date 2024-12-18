@@ -311,6 +311,7 @@ main {
 }
 
 .knowledge-level {
+  display: flex;
   background-color: var(--light-color);
   border-radius: 4px;
   width: 100px;
