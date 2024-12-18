@@ -5,7 +5,8 @@ import Certificates from './components/Certificates';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 
-import './style.css'; // Include your CSS here
+import './styles/style.css'; // Include your CSS here
+import './styles/medias.css';
 
 const App = () => {
   return (
