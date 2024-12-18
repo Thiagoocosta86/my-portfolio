@@ -153,19 +153,6 @@ main {
 /*HOME*/
 
 /*Hero style*/
-/*.hero {
-  
-border: 4px solid #333;
-margin-bottom: 100px;
-}*/
-
-
-/*Hero(pic) style*/
-
-/*.container{
-  border: 4px solid #2ba03e;
-}*/
-
 
 .profile__container {
   
@@ -204,6 +191,7 @@ margin-bottom: 100px;
 
 
 /*About style*/
+/*
 .about-text h3{
   display: flex;
   justify-content: center;
@@ -211,6 +199,7 @@ margin-bottom: 100px;
   color: var(--primary-color);
   margin-bottom: 30px;
 }
+*/
 
 .about-text {
   max-width: 800px;
