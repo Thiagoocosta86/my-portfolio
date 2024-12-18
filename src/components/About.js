@@ -1,7 +1,6 @@
 import React from 'react';
 import {aboutText} from '../data/dataText';
 
-
 import profilePic2 from "../assets/img/profile-pic.png";
 
 
@@ -11,7 +10,7 @@ const About = () => {
       <div className='container'>
         <div className="profile__container">
         <div className="about-text">
-            <h3>About Me</h3>
+            
             <div className="about-text" dangerouslySetInnerHTML={{ __html: aboutText }} />
           </div> 
           <div className="profile-pic">

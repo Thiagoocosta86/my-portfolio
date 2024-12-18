@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
+    /*Navbar*/
     header {
       flex-direction: column;
       padding: 50px;
-      
     }
   
     .hamburger {
@@ -65,5 +65,8 @@
       color: transparent;
       -webkit-text-stroke: 1px var(--primary-color);
     }
+
+/*Hero*/
+
+
   }
-  
