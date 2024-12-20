@@ -122,7 +122,43 @@
     
   }
 
+  /*Footer*/
+
+  .floating-contact {
+    position: static; /* Return it to the normal document flow */
+    margin: 0 auto; /* Center the container within the footer */
+    width: fit-content; /* Shrink to fit content */
+    padding: 0; /* Remove unnecessary padding */
+    background-color: transparent; /* Inherit the footer's background */
+    box-shadow: none; /* Remove shadow */
+    animation: none; /* Disable animation */
+    display: flex; /* Ensure alignment and spacing */
+    justify-content: center; /* Center the content horizontally */
+    border: none;
+  }
+
+  .contact-links {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-direction: row; /* Ensure icons are in a row */
+    align-items: center; /* Align icons vertically in the center */
+    justify-content: center; /* Center icons within the container */
+    gap: 30px; /* Set small, consistent spacing */
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Ensure proper centering */
+    list-style: none; /* Remove any default list styling */
+    
+  }
+
+  .social__profile-link {
+    display: inline-flex; /* Ensure the links align with the icons */
+    width: 24px;
+  }
   
+
+  .arrow-up-btn {
+    display: none; /* Hide the scroll-to-top button */
+  }
+
 
   .skills, .certificates-container, .projects, .contact{
     padding-top: 50px;

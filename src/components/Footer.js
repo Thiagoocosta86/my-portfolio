@@ -34,9 +34,15 @@ const Footer = () => {
   };
   return (
     <>
-    <section id="contact"className="contact">
-      
-      <div className="floating-contact">
+    
+    <footer>
+        {showArrow && (
+        <button onClick={scrollToTop}>
+          <img className="arrow-up-btn" src={arrowUp} width="32" height="32" alt="arrow-up" />
+        </button>
+        )}
+        <div id='contact' className="floating-contact">
+          <div>
           <ul className="contact-links">
               <a className="social__profile-link LinkedInIcon" href="https://www.linkedin.com/in/thiagodeodacosta" target="_blank" rel="noopener noreferrer">
                   <LinkedInIcon2 title="Linkedin" width="32" height="32" alt="LinkedIn" />
@@ -51,14 +57,9 @@ const Footer = () => {
                   <WhatsappIcon title="Whatsapp" width="32" height="32" alt="Whatsapp"/>
               </a>
           </ul>
+          </div>
+          
         </div>
-        {showArrow && (
-        <button onClick={scrollToTop}>
-          <img className="arrow-up-btn" src={arrowUp} width="32" height="32" alt="arrow-up" />
-        </button>
-        )}
-    </section>
-    <footer>
       <p>&copy; 2024 My Portfolio</p>
     </footer>
     </>
