@@ -33,7 +33,7 @@ const Header = () => {
         </svg>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
-        ☰
+        {isMenuOpen ? '✕' : '☰'}
       </div>
       <nav id="navbar" className={isMenuOpen ? 'open' : ''}>
         <ul>

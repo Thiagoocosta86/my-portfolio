@@ -19,7 +19,7 @@ const Projects = () => {
                     <TopIcon width="30" height="30" title="" alt="Top Icon" />
                 </div>
                 <div class="projects__modal">
-                    <div>
+                    <div class="project-type">
                         <span class="projects__subtitle">Web/ML</span>
                         <h3 class="projects__title">Car Crash Fault Prediction</h3>
                         <a href="https://github.com/Thiagoocosta86/carCrashFaultPredictionApp.git"
