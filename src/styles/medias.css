@@ -160,6 +160,19 @@
         
   }
 
+  .swiper-pagination {
+    margin-bottom: -5px;/* Position below the swiper */
+    padding: 15px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    
+  }
+
+  /*Projects*/
+
   /*Footer*/
 
   .floating-contact {

@@ -404,7 +404,6 @@ main {
   border-radius: 0px 10px 10px 10px;
   transition: 0.3s;
 
-  
 }
 
 .certificates-panel {
@@ -423,6 +422,7 @@ main {
 .certificates{
   display: flex;
   height: 350px;
+  
   /*border: 4px solid #333;*/
 }
 
