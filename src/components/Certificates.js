@@ -83,23 +83,45 @@ const Certificates = () => {
         </button>
       </div>
       <div className="tab-content">
-      <div className={`certificates-panel ${currentTab === 0 ? "active" : ""}`}>
-          <Swiper className="aws certificates"
+        <div className={`certificates-panel ${currentTab === 0 ? "active" : ""}`}>
+          <Swiper
+            className="aws certificates"
             modules={[Navigation, Pagination]}
             navigation
             pagination={{ clickable: true, dynamicBullets: true }}
-            slidesPerView={2}
+            breakpoints={{
+              768: {
+                slidesPerView: 1, // Show 1 slide for screen widths <= 768px
+              },
+              992: {
+                slidesPerView: 2, // Show 2 slide for screen widths <= 992px
+              },
+              1024: {
+                slidesPerView: 3, // Show 2 slides for screen widths > 768px
+              },
+            }}
           >
             {renderSwiperSlides(awsCertificates)}
           </Swiper>
+
         </div>
 
         <div className={`certificates-panel ${currentTab === 1 ? "active" : ""}`}>
           <Swiper className="azure certificates"
             modules={[Navigation, Pagination]}
             navigation
-            pagination={{ clickable: true }}
-            slidesPerView={2}
+            pagination={{ clickable: true, dynamicBullets: true }}
+            breakpoints={{
+              768: {
+                slidesPerView: 1, // Show 1 slide for screen widths <= 768px
+              },
+              992: {
+                slidesPerView: 2, // Show 2 slide for screen widths <= 992px
+              },
+              1024: {
+                slidesPerView: 3, // Show 2 slides for screen widths > 768px
+              },
+            }}
           >
             {renderSwiperSlides(azureCertificates)}
           </Swiper>

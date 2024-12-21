@@ -16,7 +16,7 @@
     .hamburger {
       display: block;
       padding-left: 15px;
-      
+      z-index: 11;
       
     }
   
@@ -34,7 +34,7 @@
       width: 100%;
       height: auto;
       background-color: rgba(150, 202, 219, 0.95); /* Semi-transparent background */
-      z-index: 1;
+      z-index: 10;
       overflow-y: auto;
       transform: translateY(-100%);
       transition: transform 0.5s ease-in-out;
@@ -120,6 +120,44 @@
     font-size: 0.9rem;
     position: relative;
     
+  }
+
+  /*Certificates*/
+
+  .certificates-container {
+    width:300px;
+  }
+
+  .tab-header{
+    margin-left: 23px;
+    
+  }
+  .tab-button{
+    
+    font-size: 0.9rem;
+    padding: 3px;
+    
+    
+  }
+  .certificates-panel {
+    
+    height: 250px;
+    width: auto;
+    animation: fadeIn 1s ease-in-out;
+    padding: 15px;
+  }
+
+  .certificates{
+    display: flex;
+    height: 200px;
+    /*border: 4px solid #333;*/
+    
+  }
+
+  .certificates .swiper-slide img {
+    width: 150px;
+    height: 150px;
+        
   }
 
   /*Footer*/
