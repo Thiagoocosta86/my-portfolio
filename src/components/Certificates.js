@@ -96,8 +96,8 @@ const Certificates = () => {
               992: {
                 slidesPerView: 2, // Show 2 slide for screen widths <= 992px
               },
-              1024: {
-                slidesPerView: 3, // Show 2 slides for screen widths > 768px
+              1081: {
+                slidesPerView: 3, // Show 2 slides for screen widths > 1081px
               },
             }}
           >
@@ -118,8 +118,8 @@ const Certificates = () => {
               992: {
                 slidesPerView: 2, // Show 2 slide for screen widths <= 992px
               },
-              1024: {
-                slidesPerView: 3, // Show 2 slides for screen widths > 768px
+              1081: {
+                slidesPerView: 3, // Show 2 slides for screen widths > 1081px
               },
             }}
           >
