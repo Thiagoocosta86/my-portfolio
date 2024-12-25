@@ -17,6 +17,7 @@
     display: block;
     padding-left: 15px;
     z-index: 11;
+    height: 48px;
     
   }
 
@@ -111,15 +112,31 @@
 .knowledge-level {
     display: none; /* Hide progress bars */
 }
-
-
+.skills-column {
+  flex-direction: row;
+  gap: none;
+}
+.frontend-column h4, .backend-column h4 {
+  align-self:  center;
+}
+.frontend-skills, .backend-skills {
+  flex-direction: column;
+  width: auto;
+  border: none;
+  
+}
 
 .frontend-skills li, .backend-skills li {
 
-  display: block;
+  
   font-size: 0.9rem;
   position: relative;
-  
+  border-bottom: 2px solid var(--grey-color);
+}
+
+.tech-icon {
+  width: 24px;
+  height: 24px;
 }
 
 /*Certificates*/
@@ -133,6 +150,7 @@
   
 }
 .tab-button{
+  height: 48px;
   
   font-size: 0.9rem;
   padding: 3px;
@@ -269,7 +287,7 @@
   flex-direction: row; /* Ensure icons are in a row */
   align-items: center; /* Align icons vertically in the center */
   justify-content: center; /* Center icons within the container */
-  gap: 30px; /* Set small, consistent spacing */
+  gap: 50px; /* Set small, consistent spacing */
   padding: 0; /* Remove padding */
   margin: 0 auto; /* Ensure proper centering */
   list-style: none; /* Remove any default list styling */

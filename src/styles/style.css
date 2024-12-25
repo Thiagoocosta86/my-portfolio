@@ -258,46 +258,57 @@ main {
 .skills-column {
   flex: 1;
   display: flex;  
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   margin-top: 50px;
+  gap: 50px;
   /*border: 4px solid #333;*/
 }
 
 /* Frontend and Backend Skills Styles */
 .frontend-column, .backend-column {
-  flex: 1;
+  
+  
   min-width: 45%;
   /*border: 4px solid #111ece;*/
   
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   
 }
-
-
+.frontend-column h4 {
+  align-self:  baseline;
+}
+.backend-column h4 {
+  align-self:  self-end;
+}
 .frontend-skills, .backend-skills {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
   
-  gap: 20px;
+  width: 1200px;
+  gap: 10px;
+  justify-content: space-around;
   /*border: 4px solid #333;*/
   
+  border-bottom: 2px solid var(--grey-color);
   
 }
 
 .frontend-skills li, .backend-skills li {
   
   display: flex;
+  flex-direction: column;
   align-items:center;
   gap: 15px;
   font-size: 1.2rem;
   padding: 5px 0;
-  border-bottom: 1px solid var(--light-color);
+  
   justify-content: space-between;
   position: relative;
   
@@ -306,52 +317,15 @@ main {
 }
 
 .tech-icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
-.knowledge-level {
-  display: flex;
-  background-color: var(--light-color);
-  border-radius: 4px;
-  width: 100px;
-  height: 20px;
-  position: relative;
-  overflow: hidden;
-  margin-left: auto;
-  border: 1px solid var(--grey-color);
-}
 
-.progress-bar {
-  background-color: var(--secondary-color);
-  height: 100%;
-  transition: width 0.3s ease;
-  position: relative;
-  
-}
 
-.progress-bar::after {
-  content: attr(data-percentage);
-  position: absolute;
-   /* Position above the progress bar */
-  
-  left: 50%;
-  transform: translateX(-50%, -50%);
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 1px 1px;
-  font-size: 0.75rem;
-  border-radius: 3px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  pointer-events: none; /* Makes tooltip unclickable */
-  
-}
 
-.progress-bar:hover::after {
-  opacity: 1; /* Show tooltip on hover */
-}
+
+
 
 /* CERTIFICATES */
 
@@ -409,8 +383,10 @@ main {
 .certificates-panel {
   display: none;
   height: 500px;
+  
   animation: fadeIn 1s ease-in-out;
   padding: 100px;
+  
 }
 
 
@@ -423,12 +399,13 @@ main {
   display: flex;
   height: 350px;
   
+  
   /*border: 4px solid #333;*/
 }
 
 .certificates .swiper-slide img {
-  width: 290px;
-  height: 290px;
+  width: 250px;
+  height: 250px;
   object-fit: contain; 
   margin: auto; 
   
@@ -696,7 +673,8 @@ main {
   fill: var(--primary-color);
     /* Default color for all icons */
   transition: fill 1s ease; transform: 1s;
-  transform: scale(1)
+  transform: scale(1);
+  
 }
 
 
