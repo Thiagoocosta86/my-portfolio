@@ -20,10 +20,10 @@ const Projects = () => {
             easing: 'ease', 
         });
 
-        sr.reveal('#project1', { origin: 'left', delay: 900 });
-        sr.reveal('#project2', { origin: 'left', delay: 700 });
+        sr.reveal('#project1', { origin: 'left', delay: 1000 });
+        sr.reveal('#project2', { origin: 'left', delay: 750 });
         sr.reveal('#project3', { origin: 'left', delay: 500 });
-        sr.reveal('#project4', { origin: 'left', delay: 200 });
+        sr.reveal('#project4', { origin: 'left', delay: 250 });
     }, []);
   return (
     <section id="projects"className="projects">
