@@ -19,10 +19,11 @@ const Skills = () => {
   useEffect(() => {
     const sr = ScrollReveal({
       
-      distance: '50px',
+      distance: '150px',
       duration: 800,
       delay: 200,
       reset: true, 
+      easing: 'linear',
     });
 
     sr.reveal('#html', { origin: 'left', delay: 200 });

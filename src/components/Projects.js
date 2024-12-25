@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 import {carCrashWebApp} from '../data/dataText';
 
@@ -9,11 +10,26 @@ import { ReactComponent as TopIcon } from "../assets/icons/arrowhead-up.svg";
 import { ReactComponent as CodingImg } from "../assets/img/underConstruction.svg";
 
 const Projects = () => {
+    useEffect(() => {
+        const sr = ScrollReveal({
+            
+            distance: '350px',
+            duration: 1000,
+            delay: 200,
+            reset: true,
+            easing: 'ease', 
+        });
+
+        sr.reveal('#project1', { origin: 'left', delay: 900 });
+        sr.reveal('#project2', { origin: 'left', delay: 700 });
+        sr.reveal('#project3', { origin: 'left', delay: 500 });
+        sr.reveal('#project4', { origin: 'left', delay: 200 });
+    }, []);
   return (
     <section id="projects"className="projects">
       <h3>Projects</h3>
       <div class="projects__content grid filters__active " data-content id="projects">
-            <article class="projects__card">
+            <article id="project1" class="projects__card">
                 <img src={carCrashWebAppPic} alt="codingImg" title="" width="128" height="128" />
                 <div className="top-icon">
                     <TopIcon width="30" height="30" title="" alt="Top Icon" />
@@ -32,7 +48,7 @@ const Projects = () => {
                     <p dangerouslySetInnerHTML={{ __html: carCrashWebApp }} />
                 </div>
             </article>
-            <article class="projects__card">
+            <article id="project2" class="projects__card">
                 <CodingImg className="coding-img" title="Under Construction" width="128" height="128" />
                 <div className="top-icon">
                     <TopIcon width="30" height="30" title="" alt="Top Icon" />
@@ -51,7 +67,7 @@ const Projects = () => {
                     <p>###</p>
                 </div>
             </article>
-            <article class="projects__card">
+            <article id="project3" class="projects__card">
                 <CodingImg className="coding-img" title="Under Construction" width="128" height="128" />
                 <div className="top-icon">
                     <TopIcon width="30" height="30" title="" alt="Top Icon" />
@@ -70,7 +86,7 @@ const Projects = () => {
                     <p>###</p>
                 </div>
             </article>
-            <article class="projects__card">
+            <article id="project4" class="projects__card">
                 <CodingImg className="coding-img" title="Under Construction" width="128" height="128" />
                 <div className="top-icon">
                     <TopIcon width="30" height="30" title="" alt="Top Icon" />
