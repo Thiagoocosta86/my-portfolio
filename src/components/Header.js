@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 1024);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleResize = () => {
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth < 1024;
     setIsMobileView(isMobile);
     if (!isMobile) {
       setIsMenuOpen(false);

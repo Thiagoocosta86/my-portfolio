@@ -18,7 +18,6 @@ import { ReactComponent as Mysql } from '../assets/icons/mysql-colour.svg';
 const Skills = () => {
   useEffect(() => {
     const sr = ScrollReveal({
-      
       distance: '150px',
       duration: 800,
       delay: 200,
@@ -26,16 +25,22 @@ const Skills = () => {
       easing: 'linear',
     });
 
-    sr.reveal('#html', { origin: 'left', delay: 200 });
-    sr.reveal('#css', { origin: 'left', delay: 400 });
-    sr.reveal('#javascript', { origin: 'left', delay: 600 });
-    sr.reveal('#react', { origin: 'left', delay: 800 });
-    sr.reveal('#java', { origin: 'right', delay: 200 });
-    sr.reveal('#python', { origin: 'right', delay: 400 });
-    sr.reveal('#nodejs', { origin: 'right', delay: 600 });
-    sr.reveal('#aws', { origin: 'right', delay: 800 });
-    sr.reveal('#mongodb', { origin: 'right', delay: 1000 });
-    sr.reveal('#mysql', { origin: 'right', delay: 1200 });
+    const skills = [
+      { id: 'html', origin: 'left', delay: 200 },
+      { id: 'css', origin: 'left', delay: 400 },
+      { id: 'javascript', origin: 'left', delay: 600 },
+      { id: 'react', origin: 'left', delay: 800 },
+      { id: 'java', origin: 'right', delay: 200 },
+      { id: 'python', origin: 'right', delay: 400 },
+      { id: 'nodejs', origin: 'right', delay: 600 },
+      { id: 'aws', origin: 'right', delay: 800 },
+      { id: 'mongodb', origin: 'right', delay: 1000 },
+      { id: 'mysql', origin: 'right', delay: 1200 },
+    ];
+  
+    skills.forEach(skill => {
+      sr.reveal(`#${skill.id}`, { origin: skill.origin, delay: skill.delay });
+    });
   }, []);
 
   return (
@@ -46,19 +51,19 @@ const Skills = () => {
           <div className="frontend-column">
             <h4>Frontend</h4>
             <ul className="frontend-skills">
-              <li id= "html">
+              <li id= "html" aria-label="HTML">
                 <Html title="HTML" width="24" height="24" alt="HTML Icon" className="tech-icon" />
                 HTML
               </li>
-              <li id= "css">
+              <li id= "css" aria-label="CSS">
                 <Css title="CSS" width="24" height="24" alt="CSS Icon" className="tech-icon" />
                 CSS
               </li>
-              <li id= "javascript">
+              <li id= "javascript" aria-label="JavaScript">
                 <JavaScript title="JavaScript" width="24" height="24" alt="JavaScript Icon" className="tech-icon" />
                 JavaScript
               </li>
-              <li id= "react">
+              <li id= "react" aria-label="React">
                 <ReactIcon title="REACT" width="24" height="24" alt="React Icon" className="tech-icon" />
                 React
               </li>
@@ -68,27 +73,27 @@ const Skills = () => {
           <div className="backend-column">
             <h4>Backend</h4>
             <ul className="backend-skills">
-              <li id= "java">
+              <li id= "java" aria-label="Java">
                 <Java title="Java" width="24" height="24" alt="Java Icon" className="tech-icon" />
                 Java
               </li>
-              <li id= "python">
+              <li id= "python" aria-label="Python">
                 <Python title="Python" width="24" height="24" alt="Python Icon" className="tech-icon" />
                 Python
               </li>
-              <li id= "nodejs">
+              <li id= "nodejs" aria-label="NodeJs">
                 <Nodejs title="NodeJs" width="24" height="24" alt="Nodejs Icon" className="tech-icon" />
                 Nodejs
               </li>
-              <li id= "aws">
+              <li id= "aws" aria-label="AWS">
                 <Aws title="AWS" width="24" height="24" alt="AWS Icon" className="tech-icon" />
                 AWS
               </li>
-              <li id= "mongodb">
+              <li id= "mongodb" aria-label="MongoDB">
                 <Mongodb title="MongoDB" width="24" height="24" alt="Mongodb Icon" className="tech-icon" />
                 Mongodb
               </li>
-              <li id= "mysql">
+              <li id= "mysql" aria-label="MySQL">
                 <Mysql title="MySql" width="24" height="24" alt="MySql Icon" className="tech-icon" />
                 Mysql
               </li>

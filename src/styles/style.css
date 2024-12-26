@@ -190,17 +190,6 @@ main {
 
 
 
-/*About style*/
-/*
-.about-text h3{
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;  
-  color: var(--primary-color);
-  margin-bottom: 30px;
-}
-*/
-
 .about-text {
   max-width: 800px;
   align-self: center;
@@ -220,7 +209,7 @@ main {
   font-weight: bold;
   text-align: center;
 }
-/*Social Media style*/
+
 
 
 
