@@ -23,18 +23,17 @@
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 
 /*BODY*/
 body {
-  
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-color);
   background: linear-gradient(var(--secondary-color), var(--light-color), var(--secondary-color));
-  
+  min-height: 100vh;
+  overflow-x: hidden;
   /*border: 4px solid #333; */
 }
 
@@ -43,10 +42,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding: 1rem 3%;
   background: linear-gradient(var(--secondary-color));
-  padding-inline: 50px;
-  margin-inline: auto;
 }
 
 
@@ -60,17 +57,15 @@ svg{
 }
 
 svg text {
-  font-size: 5rem;
+  font-size: clamp(4rem, 5vw, 5rem);
   stroke-width: 10;
   letter-spacing: 6px;
   font-family: "Oxanium", sans-serif;
-  
 }
 
 svg text.text-body {
   stroke: var(--primary-color);
   animation: 2s 2 alternate animate-stroke;
-  
 }
 
 @keyframes animate-stroke {
@@ -98,14 +93,15 @@ svg text.text-body {
 /*Navbar style*/
 
 nav {
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  margin: 0;
-  
+  flex-direction: row;
+  padding: 0.5rem;
+  gap: 1rem;
 }
 
 nav ul li {
@@ -128,18 +124,6 @@ nav a:hover {
 /* Responsive Styles */
 .hamburger {
   display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  background-color: var(--secondary-color);
-  width: 100%;
-  height: auto;
-  
-  
 }
 
 
@@ -158,25 +142,22 @@ main {
   
   display: flex;
   justify-content: space-evenly;
-  margin-top: 150px;
+  margin-top: 10vh;
   flex-wrap: wrap;
   height: auto;
+  gap: 1rem;
   /*border: 4px solid #2ba03e;*/
-  
 }
 
 
 .profile-pic {
-  position: relative; /* Position the images relative to this container */
-  width: 500px; /* Set the width to the width of the images */
-  height: 500px; /* Set the height to the height of the images */
-  border: 3.5px solid var(--grey-color); /* Border styling */
-  flex-shrink: 0;
-  border-radius: 50%; /* Create a circular border */
-  overflow: hidden; /* Ensure that child images don't overflow the border */
-  transition: border-color 1.0s ease; /* Add transition effect for border color */
-  margin-top: 50px;
-  
+  position: relative;
+  width: clamp(200px, 50%, 500px); /* Responsive width */
+  aspect-ratio: 1 / 1; /* Maintain a square aspect ratio */
+  border: 3.5px solid var(--grey-color);
+  border-radius: 50%;
+  overflow: hidden;  
+  margin: 2rem 0; /* Replace fixed top margin for better spacing */
 }
 
 .profile-pic img {
@@ -185,7 +166,7 @@ main {
   left: 0; /* Align images to the left */
   width: 100%;
   height: 100%;
-  transition: opacity 1.0s ease; /* Add transition effect for opacity */
+  object-fit: cover;
 }
 
 
@@ -193,16 +174,14 @@ main {
 .about-text {
   max-width: 800px;
   align-self: center;
+  padding: 1rem;
   /*border: 4px solid #3a85ca;*/
-  
-  
 }
 
 .about-text p {
   margin: 20px 0;
   line-height: 1.6;
-  font-size: 1.2rem;
-  
+  font-size: clamp(1rem, 1.2vw, 1.2rem); /* Scales text size responsively */
 }
 
 .about-text p:last-child {
@@ -216,12 +195,13 @@ main {
 
 /*SKILLS*/
 .skills, .certificates-container{
-  /*border: 4px solid #333;*/
-  
-  margin: 20px auto;
+  margin: 2rem auto;
   max-width: 1200px;
   overflow: hidden;
-  
+}
+
+.skills {
+  padding: 2rem 1rem; /* Add spacing around the section */
 }
 
  h3 {
@@ -229,17 +209,14 @@ main {
   font-size: 2rem;
   color: var(--primary-color);
   margin-bottom: 30px;
-  /*border: 4px solid #802f2f;*/
   font-family: "Oxanium", sans-serif;
-  
 }
+
 .skills h4{
   text-align: center;
   font-size: 1.5rem;
   color: var(--primary-color);
   margin-bottom: 30px;
-  /*border: 4px solid #802f2f;*/
-  
 }
 
 
@@ -252,77 +229,61 @@ main {
   width: 100%;
   margin-top: 50px;
   gap: 50px;
-  /*border: 4px solid #333;*/
 }
 
 /* Frontend and Backend Skills Styles */
 .frontend-column, .backend-column {
-  
-  
   min-width: 45%;
-  /*border: 4px solid #111ece;*/
-  
   display: flex;
-  
   flex-direction: column;
   align-items: center;
-  
 }
+
 .frontend-column h4 {
   align-self:  baseline;
 }
+
 .backend-column h4 {
   align-self:  self-end;
 }
+
 .frontend-skills, .backend-skills {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  
-  width: 1200px;
-  gap: 10px;
+  max-width: 1200px;
+  width: 100%;
+  gap: 1rem;
   justify-content: space-around;
-  /*border: 4px solid #333;*/
-  
   border-bottom: 2px solid var(--grey-color);
-  
 }
 
 .frontend-skills li, .backend-skills li {
-  
   display: flex;
   flex-direction: column;
   align-items:center;
   gap: 15px;
   font-size: 1.2rem;
   padding: 5px 0;
-  
   justify-content: space-between;
   position: relative;
-  
-  
-  
 }
 
 .tech-icon {
-  width: 32px;
-  height: 32px;
+  width: clamp(24px, 3vw, 32px);
+  height: clamp(24px, 3vw, 32px);
 }
-
-
-
-
 
 
 
 /* CERTIFICATES */
 
 .certificates-container {
-  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  
+  padding: 1rem;
 }
 
 .tab-header {
@@ -342,7 +303,7 @@ main {
   background-color: var(--primary-color);
   color: var(--light-color);
   margin: 0;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   border-radius: 5px 5px 0 0;
   letter-spacing: 3px;
   border: 2px outset var(--secondary-color);
@@ -350,12 +311,12 @@ main {
   font-family: "Oxanium", sans-serif;
   font-size: 1.4rem;
   margin-bottom: -15px;
-
 }
 
 .tab-button.active {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .tab-content {
@@ -366,16 +327,24 @@ main {
   background-color: var(--secondary-color);
   border-radius: 0px 10px 10px 10px;
   transition: 0.3s;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .certificates-panel {
   display: none;
   height: 500px;
-  
   animation: fadeIn 1s ease-in-out;
   padding: 100px;
-  
 }
 
 
@@ -387,9 +356,6 @@ main {
 .certificates{
   display: flex;
   height: 350px;
-  
-  
-  /*border: 4px solid #333;*/
 }
 
 .certificates .swiper-slide img {
@@ -397,19 +363,21 @@ main {
   height: 250px;
   object-fit: contain; 
   margin: auto; 
-  
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--primary-color); /* Button color */
-    
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  
   transform: scale(1.2)
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem; /* Increase the size of the arrows */
 }
 
 .swiper-pagination {
@@ -423,7 +391,6 @@ main {
   height: 12px;
   background-color: var(--primary-color);
   opacity: 0.4;
-  
 }
 
 .swiper-pagination-bullet-active {
@@ -431,9 +398,6 @@ main {
   opacity: 1;
   transform: scale(1.2)
 }
-
-
-
 
   /*PROJECTS*/
 
@@ -533,7 +497,6 @@ main {
     color: var(--light-color);
     display: flex;
     flex-direction: column;
-    
     justify-items: center;
     justify-content: center;
     padding: 1.5rem 1.25rem;
@@ -573,11 +536,9 @@ main {
     height: 32px;
     width: 32px;
     align-self: center;
-
   }
 
   .GithubIcon2:hover svg {
-    
     transform: scale(1.1)
   }
 
@@ -585,8 +546,6 @@ main {
     color: var(--secondary-color);
     margin-top: 0.5rem;
   }
-
-
 
   .projects__card:hover .projects__modal {
     bottom: 0; /* Slide modal to cover the image */
@@ -596,7 +555,7 @@ main {
     bottom: 0; /* Slide it up partially when the card is hovered */
   }
 
- 
+
 
   [id^='Sound-'], [id^='Smoke-'] {
     animation: pulse 1s ease-in-out infinite alternate;
@@ -626,26 +585,30 @@ main {
 
 .floating-contact {
   position: fixed; /* Keeps the element fixed while scrolling */
-  top: 50%; /* Start at the top of the viewport */
+  top: calc(50% - 10px); /* Start at the top of the viewport */
   left: 0; /* Align it to the left */
-  width: 100px; /* Set an appropriate width */
+  max-width: clamp(80px, 0, 100px); /* Set an appropriate width */
   padding: 20px; /* Add some padding */
   background-color: var(--secondary-color); /* Background color matching your theme */
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0px 15px 15px 0px;
   border: 1px solid var(--grey-color);
   animation: float 4s ease-in-out infinite; /* Add a floating animation */
-  
 }
+
 
 @keyframes float {
   0%, 100% {
     transform: translateY(0); /* Starting position */
   }
   50% {
-    transform: translateY(20px); /* Float down */
+    transform: translateY(15px); /* Float down */
   }
+  
 }
+
+
+
 
 .contact-links{
   display: flex;
@@ -653,17 +616,16 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  
 }
 
 
 
 .social__profile-link svg {
   fill: var(--primary-color);
-    /* Default color for all icons */
   transition: fill 1s ease; transform: 1s;
   transform: scale(1);
-  
+  width: clamp(24px, 3vw, 32px);
+  height: clamp(24px, 3vw, 32px);
 }
 
 
@@ -696,9 +658,8 @@ button {
 }
 
 .arrow-up-btn {
-  
   position: fixed;
-  bottom: 400px; /* Adjust as needed */
+  bottom: calc(50% + 10px); /* Adjust as needed */
   right: 20px; /* Adjust as needed */
   background-color: var(--secondary-color);
   border: none;

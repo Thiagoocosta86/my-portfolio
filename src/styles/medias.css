@@ -11,6 +11,7 @@
   header {
     flex-direction: column;
     padding: 50px;
+    
   }
 
   .hamburger {
@@ -18,7 +19,13 @@
     padding-left: 15px;
     z-index: 11;
     height: 48px;
-    
+    background-color: rgba(150, 202, 219, 0.95); /* Semi-transparent background */
+    font-size: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
   }
 
   #home {
@@ -39,7 +46,6 @@
     overflow-y: auto;
     transform: translateY(-100%);
     transition: transform 0.5s ease-in-out;
-    
   }
 
   nav.open {
@@ -51,7 +57,6 @@
   nav ul {
     flex-direction: column;
     gap: 10px;
-    
     margin: 30px 0; /* Adjust to center the links visually */
     padding: 0;
     align-items: center;
@@ -67,7 +72,6 @@
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    
   }
 
   nav ul li a:hover {
@@ -86,8 +90,8 @@
 .profile-pic {
   width: 300px; /* Smaller profile picture */
   height: 300px;
-  margin-top: -100px; /* Reduce margin for better spacing */
   order:  -1;
+  margin: -3rem 0;
 }
 
 .about-text {
@@ -110,7 +114,7 @@
 }
 
 .knowledge-level {
-    display: none; /* Hide progress bars */
+  display: none; /* Hide progress bars */
 }
 .skills-column {
   flex-direction: row;
@@ -119,16 +123,16 @@
 .frontend-column h4, .backend-column h4 {
   align-self:  center;
 }
+
+
 .frontend-skills, .backend-skills {
   flex-direction: column;
   width: auto;
   border: none;
-  
 }
 
 .frontend-skills li, .backend-skills li {
-
-  
+  margin-bottom: 0.5rem;
   font-size: 0.9rem;
   position: relative;
   border-bottom: 2px solid var(--grey-color);
@@ -142,20 +146,17 @@
 /*Certificates*/
 
 .certificates-container {
-  width:300px;
+  max-width:350px;
 }
 
 .tab-header{
   margin-left: 23px;
-  
 }
 .tab-button{
   height: 48px;
-  
+  width: 100%;
   font-size: 0.9rem;
   padding: 3px;
-  
-  
 }
 .certificates-panel {
   
@@ -168,14 +169,11 @@
 .certificates{
   display: flex;
   height: 200px;
-  /*border: 4px solid #333;*/
-  
 }
 
 .certificates .swiper-slide img {
   width: 150px;
   height: 150px;
-      
 }
 
 .swiper-pagination {
@@ -186,7 +184,6 @@
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
-  
 }
 
 /*Projects*/
@@ -236,7 +233,6 @@
   justify-content: space-evenly;
   gap: 1rem;
   height: 100%;
-  
 }
 
 .project-type{
@@ -245,7 +241,6 @@
   align-content: flex-start;
   justify-content: center;
   gap: -20px;
-  
 }
 
 .projects__subtitle {
@@ -291,7 +286,6 @@
   padding: 0; /* Remove padding */
   margin: 0 auto; /* Ensure proper centering */
   list-style: none; /* Remove any default list styling */
-  
 }
 
 .social__profile-link {
@@ -309,4 +303,347 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+ 
+  h3{
+    font-size: 1.5rem;
+}
+
+/*Navbar*/
+header {
+  flex-direction: column;
+  padding: 50px;
+}
+
+.hamburger {
+  display: block;
+  padding-left: 15px;
+  z-index: 11;
+  height: 48px;
+  background-color: rgba(150, 202, 219, 0.95); /* Semi-transparent background */
+  font-size: 2rem;
+  cursor: pointer;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+#home {
+  margin-top: -40px; /* Adjust based on your header's height */
+  padding-top: 40px; /* Same value as above for correct positioning */
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: -35px; /* Adjust based on burger height */
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(150, 202, 219, 0.95); /* Semi-transparent background */
+  z-index: 10;
+  overflow-y: auto;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+nav.open {
+  transform: translateY(0);
+  padding-top: 40px;
+  border-radius: 20px;
+}
+
+nav ul {
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0; /* Adjust to center the links visually */
+  padding: 0;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--primary-color);
+}
+
+/*Hero*/
+
+.profile__container {
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align the content */
+  text-align: center; /* Center-align text content */
+}
+
+.profile-pic {
+  max-width: 350px; /* Smaller profile picture */
+  max-height: 350px;
+  order:  -1;
+  margin: -3rem 0;
+}
+
+.about-text {
+  max-width: 90%; /* Shrink text container width */
+  font-size: 1rem; /* Smaller font size */
+  margin-top: 20px; /* Add spacing below the profile picture */
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 0.9rem; /* Reduce text size */
+  line-height: 1.4; /* Adjust line spacing */
+}
+
+  
+  /*Certificates*/
+
+  .certificates-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .tab-header{
+    margin-left: 23px;
+  }
+  .tab-button{
+    height: 48px;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 3px;
+  }
+  .certificates-panel {
+    height: 250px;
+    width: auto;
+    animation: fadeIn 1s ease-in-out;
+    padding: 15px;
+  }
+
+  .certificates{
+    display: flex;
+    height: 200px;
+  }
+
+  .certificates .swiper-slide img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .swiper-pagination {
+    margin-bottom: -5px;/* Position below the swiper */
+    padding: 15px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+   /*Projects*/
+   .projects__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 50px;
+    align-items: start;
+    justify-content: center;
+  }
+ 
+  /*Footer*/
+
+  .floating-contact {
+    position: static; /* Return it to the normal document flow */
+    margin: 0 auto; /* Center the container within the footer */
+    width: fit-content; /* Shrink to fit content */
+    padding: 0; /* Remove unnecessary padding */
+    background-color: transparent; /* Inherit the footer's background */
+    box-shadow: none; /* Remove shadow */
+    animation: none; /* Disable animation */
+    display: flex; /* Ensure alignment and spacing */
+    justify-content: center; /* Center the content horizontally */
+    border: none;
+  }
+
+  .contact-links {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-direction: row; /* Ensure icons are in a row */
+    align-items: center; /* Align icons vertically in the center */
+    justify-content: center; /* Center icons within the container */
+    gap: 50px; /* Set small, consistent spacing */
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Ensure proper centering */
+    list-style: none; /* Remove any default list styling */
+  }
+
+  .social__profile-link {
+    display: inline-flex; /* Ensure the links align with the icons */
+    width: 24px;
+  }
+
+
+  .arrow-up-btn {
+    display: none; /* Hide the scroll-to-top button */
+  }
+
+
+  .skills, .certificates-container, .projects, .contact{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+ 
+}
+
+/* Large devices (laptops/desktops, 1025px - 1440px) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  
+  /*Hero*/
+
+.profile__container {
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align the content */
+  text-align: center; /* Center-align text content */
+}
+
+.profile-pic {
+  max-width: 450px; /* Smaller profile picture */
+  max-height: 450px;
+  order:  -1;
+  margin: -3rem 0;
+}
+
+.about-text {
+  max-width: 90%; /* Shrink text container width */
+  font-size: 1rem; /* Smaller font size */
+  margin-top: 20px; /* Add spacing below the profile picture */
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1rem; /* Reduce text size */
+  line-height: 1.4; /* Adjust line spacing */
+}
+
+  
+ /* CERTIFICATES */
+
+  .certificates-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .tab-header{
+    margin-left: 23px;
+  }
+  .tab-button{
+    height: 48px;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 3px;
+  }
+  .certificates-panel {
+    height: 400px;
+    width: auto;
+    animation: fadeIn 1s ease-in-out;
+    padding: 100px;
+  }
+
+  .certificates{
+    display: flex;
+    height: 200px;
+  }
+
+  .certificates .swiper-slide img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .swiper-pagination {
+    margin-bottom: -20px;/* Position below the swiper */
+    padding: 15px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    
+  }
+    
+  /*Projects*/
+  .projects__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 50px;
+    align-items: start;
+    justify-content: center;
+  }
+
+  /*Footer*/
+
+  .floating-contact {
+    position: static; /* Return it to the normal document flow */
+    margin: 0 auto; /* Center the container within the footer */
+    width: fit-content; /* Shrink to fit content */
+    padding: 0; /* Remove unnecessary padding */
+    background-color: transparent; /* Inherit the footer's background */
+    box-shadow: none; /* Remove shadow */
+    animation: none; /* Disable animation */
+    display: flex; /* Ensure alignment and spacing */
+    justify-content: center; /* Center the content horizontally */
+    border: none;
+  }
+
+  .contact-links {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-direction: row; /* Ensure icons are in a row */
+    align-items: center; /* Align icons vertically in the center */
+    justify-content: center; /* Center icons within the container */
+    gap: 50px; /* Set small, consistent spacing */
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Ensure proper centering */
+    list-style: none; /* Remove any default list styling */
+  }
+
+  .social__profile-link {
+    display: inline-flex; /* Ensure the links align with the icons */
+    width: clamp(24px, 3vw, 32px);
+    height: clamp(24px, 3vw, 32px);
+  }
+
+
+  .arrow-up-btn {
+    display: none; /* Hide the scroll-to-top button */
+  }
+
+
+  .skills, .certificates-container, .projects, .contact{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* Extra large devices (large desktops, >1441px) */
+@media only screen and (min-width: 1441px) {
+  .about-text {
+    max-width: 50%; /* Shrink text container width */
+  }
+  
 }
