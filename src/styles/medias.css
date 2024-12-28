@@ -28,9 +28,9 @@
     width: 100%;
   }
 
-  #home {
-    margin-top: -40px; /* Adjust based on your header's height */
-    padding-top: 40px; /* Same value as above for correct positioning */
+  #home, #skills, #certificates, #projects {
+    margin-top: -50px; /* Adjust based on your header's height */
+    padding-top: 50px; /* Same value as above for correct positioning */
   }
 
   nav {
@@ -150,13 +150,13 @@
 }
 
 .tab-header{
-  margin-left: 23px;
+  margin-left: 25px;
 }
 .tab-button{
   height: 48px;
-  width: 100%;
+  
   font-size: 0.9rem;
-  padding: 3px;
+  padding: 5px;
 }
 .certificates-panel {
   
@@ -187,13 +187,16 @@
 }
 
 /*Projects*/
+.projects{
+  height: 100%;
+}
 .projects__content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  grid-template-columns: repeat(1, 1fr); /* 2 items per row */
   gap: 0.5rem; /* Adjust spacing */
   padding: 1.5rem; /* Adjust padding */
   width: 350px;
-  height: 350px;
+  height: auto;
 }
 
 .projects__card {
@@ -207,26 +210,40 @@
 
 .projects__card img,
 .projects__card .coding-img {
-  width: 100%; /* Fit the container */
+   /* Fit the container */
   height: 100%; /* Maintain square shape */
-  object-fit: fill; /* Cover the card area */
+  object-fit: cover; /* Cover the card area */
 }
-@keyframes bounce {
-  0% {
-    transform: translateX(-110%) translateY(0px); /* Initial and resting position */
+@keyframes slide-modal {
+  0%, 50% {
+    transform: translateX(-110%) translateY(0px); /* Hidden */
   }
-  10%, 90% {
-    transform: translateX(0) translateY(0px); /* Bounce up */
+  55%, 95% {
+    transform: translateX(0) translateY(0px); /* Fully visible */
   }
   100% {
-    transform: translateX(110%) translateY(0px) ; /* Slightly lower bounce */
+    transform: translateX(110%) translateY(0px); /* Hidden again */
   }
 }
+
+@keyframes slide-description {
+  0%, 50% {
+    transform: translateX(-110%) translateY(0px); /* Hidden */
+  }
+  55%, 95% {
+    transform: translateX(0) translateY(0px); /* Fully visible */
+  }
+  100% {
+    transform: translateX(110%) translateY(0px); /* Hidden again */
+  }
+}
+
 .projects__modal {
   bottom: 0;
   padding: 0.1rem; /* Reduce padding for smaller screens */
   font-size: 0.5rem; /* Adjust font size */
-  animation: bounce 10s infinite;
+  animation: slide-modal 20s infinite;
+  
   object-fit:fill;
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -244,17 +261,29 @@
 }
 
 .projects__subtitle {
-  font-size: 0.8rem; /* Adjust subtitle font size */
+  font-size: 1.1rem; /* Adjust subtitle font size */
 }
 
 .projects__title {
-  font-size: 1rem; /* Adjust title font size */
+  font-size: 1.5rem; /* Adjust title font size */
 }
 
 .projects__description {
-  display: none;
+  bottom: 0;
+  height: 100%;
+  background-color: rgba(150, 202, 219, 0.9);
+  animation: slide-description 20s infinite;
+  animation-delay: 10s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
 }
 
+.projects__description p{
+  line-height: 2;
+  font-size: 1rem;
+}
 
 .GithubIcon2 svg {    
   height: 24px;
@@ -283,15 +312,12 @@
   align-items: center; /* Align icons vertically in the center */
   justify-content: center; /* Center icons within the container */
   gap: 50px; /* Set small, consistent spacing */
-  padding: 0; /* Remove padding */
+  padding: 10px; /* Remove padding */
   margin: 0 auto; /* Ensure proper centering */
   list-style: none; /* Remove any default list styling */
 }
 
-.social__profile-link {
-  display: inline-flex; /* Ensure the links align with the icons */
-  width: 24px;
-}
+
 
 
 .arrow-up-btn {
@@ -306,8 +332,12 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
- 
-  h3{
+
+#home, #skills, #certificates, #projects {
+  margin-top: -50px; /* Adjust based on your header's height */
+  padding-top: 50px; /* Same value as above for correct positioning */
+}
+h3{
     font-size: 1.5rem;
 }
 
@@ -418,9 +448,7 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  .tab-header{
-    margin-left: 23px;
-  }
+  
   .tab-button{
     height: 48px;
     width: 100%;
@@ -486,15 +514,12 @@ nav ul li a:hover {
     align-items: center; /* Align icons vertically in the center */
     justify-content: center; /* Center icons within the container */
     gap: 50px; /* Set small, consistent spacing */
-    padding: 0; /* Remove padding */
+    padding: 10px; /* Remove padding */
     margin: 0 auto; /* Ensure proper centering */
     list-style: none; /* Remove any default list styling */
   }
 
-  .social__profile-link {
-    display: inline-flex; /* Ensure the links align with the icons */
-    width: 24px;
-  }
+ 
 
 
   .arrow-up-btn {
@@ -548,13 +573,11 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  .tab-header{
-    margin-left: 23px;
-  }
+  
   .tab-button{
     height: 48px;
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 3px;
   }
   .certificates-panel {
@@ -617,7 +640,7 @@ nav ul li a:hover {
     align-items: center; /* Align icons vertically in the center */
     justify-content: center; /* Center icons within the container */
     gap: 50px; /* Set small, consistent spacing */
-    padding: 0; /* Remove padding */
+    padding: 10px; /* Remove padding */
     margin: 0 auto; /* Ensure proper centering */
     list-style: none; /* Remove any default list styling */
   }
