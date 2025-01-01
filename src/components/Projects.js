@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 
 import {carCrashWebApp} from '../data/dataText';
-
+import {myPortfolio} from '../data/dataText';
 
 import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
+/*import myPortfolioPic from "../assets/img/my-portfolioMobile.png";*/
 import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
 import { ReactComponent as TopIcon } from "../assets/icons/arrowhead-up.svg";
 import { ReactComponent as CodingImg } from "../assets/img/underConstruction.svg";
@@ -32,7 +33,7 @@ const Projects = () => {
             <article id="project1" class="projects__card">
                 <img src={carCrashWebAppPic} alt="codingImg" title="" width="128" height="128" />
                 <div className="top-icon">
-                    <TopIcon width="30" height="30" title="" alt="Top Icon" />
+                    <TopIcon width="30" height="30" title="CarCrashWebApp" alt="Top Icon" />
                 </div>
                 <div class="projects__modal">
                     <div class="project-type">
@@ -55,16 +56,16 @@ const Projects = () => {
                 </div>
                 <div class="projects__modal">
                     <div>
-                        <span class="projects__subtitle">Java</span>
-                        <h3 class="projects__title">RentACar</h3>
-                        <a href="https://github.com/Thiagoocosta86/RentACar.git"
+                        <span class="projects__subtitle">React.js/AWS/GitHub</span>
+                        <h3 class="projects__title">My Portfolio</h3>
+                        <a href="https://github.com/Thiagoocosta86/my-portfolio.git"
                             class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                             <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
                 </div>
                 <div className="projects__description">
-                    <p>###</p>
+                    <p dangerouslySetInnerHTML={{ __html: myPortfolio }} />
                 </div>
             </article>
             <article id="project3" class="projects__card">
@@ -74,16 +75,16 @@ const Projects = () => {
                 </div>
                 <div class="projects__modal">
                     <div>
-                        <span class="projects__subtitle">XML-Node.js - ServerSide</span>
-                        <h3 class="projects__title">ssp-ca3</h3>
-                        <a href="https://github.com/Thiagoocosta86/ssp-ca3.git"
+                        <span class="projects__subtitle"></span>
+                        <h3 class="projects__title">Under Construction</h3>
+                        <a href="https://github.com/Thiagoocosta86"
                             class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                             <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
                 </div>
                 <div className="projects__description">
-                    <p>###</p>
+                    <p>Under Construction</p>
                 </div>
             </article>
             <article id="project4" class="projects__card">
@@ -93,16 +94,16 @@ const Projects = () => {
                 </div>
                 <div class="projects__modal">
                     <div>
-                        <span class="projects__subtitle">Web</span>
-                        <h3 class="projects__title">Electricity-Bill Calculator</h3>
-                        <a href="https://github.com/tahrodriguess/Eletricity-Bill.git"
+                        <span class="projects__subtitle"></span>
+                        <h3 class="projects__title">Under Construction</h3>
+                        <a href="https://github.com/Thiagoocosta86"
                             class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                             <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
                     </div>
                 </div>
                 <div className="projects__description">
-                    <p>###</p>
+                    <p>Under Construction</p>
                 </div>
             </article>
       </div>
