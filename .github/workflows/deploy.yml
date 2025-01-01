@@ -3,35 +3,33 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # The branch you want to deploy from
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # Checkout the repository code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Set up Node.js environment
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # Ensure this matches your project requirements
+          node-version: 16
 
-      # Install dependencies and build the app
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run build
+      - name: Install dependencies
+        run: npm install
 
-      # Commit and push the build folder to the repository
+      - name: Build the app
+        run: npm run build
+
+      - name: Upload artifact for deployment
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-pages
+          path: ./build
+
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          mv build/* .
-          git add .
-          git commit -m "Deploy React app to main branch"
-          git push origin main
+        uses: actions/deploy-pages@v4
+        with:
+          artifact-name: github-pages
