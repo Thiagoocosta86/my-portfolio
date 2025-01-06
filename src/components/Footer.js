@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
           
         </div>
-      <p>&copy; 2024 My Portfolio</p>
+      <p>&copy; 2024 - Thiago de Oliveira da Costa</p>
     </footer>
     </>
   );
