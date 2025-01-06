@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
           
         </div>
-      <p>&copy; 2024 - Thiago de Oliveira da Costa</p>
+      <p>&copy; 2025 - Thiago de Oliveira da Costa</p>
     </footer>
     </>
   );
