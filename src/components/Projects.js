@@ -56,7 +56,7 @@ const Projects = () => {
                 </div>
                 <div class="projects__modal">
                     <div>
-                        <span class="projects__subtitle">React.js/AWS/GitHub</span>
+                        <span class="projects__subtitle">React.js/AWS-Amplify/GitHub</span>
                         <h3 class="projects__title">My Portfolio</h3>
                         <a href="https://github.com/Thiagoocosta86/my-portfolio.git"
                             class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">

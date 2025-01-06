@@ -28,7 +28,7 @@ const carCrashWebApp =
 
 const myPortfolio =
     `
-        Resposive webpage portfolio was built with React.js and deployed through AWS cloud using Github and Simplify. <b>Learn more...</b>
+        Resposive webpage portfolio was built with React.js and deployed through AWS cloud using Github and Amplify. <b>Learn more...</b>
     `
 
     
