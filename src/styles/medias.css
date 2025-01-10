@@ -113,9 +113,7 @@
   font-size: 1.1rem;
 }
 
-.knowledge-level {
-  display: none; /* Hide progress bars */
-}
+
 .skills-column {
   flex-direction: row;
   gap: none;
@@ -129,6 +127,7 @@
   flex-direction: column;
   width: auto;
   border: none;
+  height: 100%;
 }
 
 .frontend-skills li, .backend-skills li {
@@ -317,7 +316,9 @@
   list-style: none; /* Remove any default list styling */
 }
 
-
+.footer p {
+  font-size: 1rem;
+}
 
 
 .arrow-up-btn {

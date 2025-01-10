@@ -5,33 +5,35 @@ import {carCrashWebApp} from '../data/dataText';
 import {myPortfolio} from '../data/dataText';
 
 import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
-/*import myPortfolioPic from "../assets/img/my-portfolioMobile.png";*/
+import myPortfolioPic from "../assets/img/my-portfolioMobile.png";
 import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
 import { ReactComponent as TopIcon } from "../assets/icons/arrowhead-up.svg";
 import { ReactComponent as CodingImg } from "../assets/img/underConstruction.svg";
 
 const Projects = () => {
     useEffect(() => {
-        const sr = ScrollReveal({
-            
-            distance: '350px',
-            duration: 1000,
-            delay: 200,
-            reset: true,
-            easing: 'ease', 
-        });
+        if (window.innerWidth > 768) {
+            const sr = ScrollReveal({
+                
+                distance: '350px',
+                duration: 1000,
+                delay: 200,
+                reset: true,
+                easing: 'ease', 
+            });
 
-        sr.reveal('#project1', { origin: 'left', delay: 1000 });
-        sr.reveal('#project2', { origin: 'left', delay: 750 });
-        sr.reveal('#project3', { origin: 'left', delay: 500 });
-        sr.reveal('#project4', { origin: 'left', delay: 250 });
+            sr.reveal('#project1', { origin: 'left', delay: 1000 });
+            sr.reveal('#project2', { origin: 'left', delay: 750 });
+            sr.reveal('#project3', { origin: 'left', delay: 500 });
+            sr.reveal('#project4', { origin: 'left', delay: 250 });
+        }
     }, []);
   return (
     <section id="projects"className="projects">
       <h3>Projects</h3>
       <div class="projects__content grid filters__active " data-content id="projects">
             <article id="project1" class="projects__card">
-                <img src={carCrashWebAppPic} alt="codingImg" title="" width="128" height="128" />
+                <img src={carCrashWebAppPic} alt="codingImg" title="CarCrashWebApp" width="128" height="128" />
                 <div className="top-icon">
                     <TopIcon width="30" height="30" title="CarCrashWebApp" alt="Top Icon" />
                 </div>
@@ -50,7 +52,7 @@ const Projects = () => {
                 </div>
             </article>
             <article id="project2" class="projects__card">
-                <CodingImg className="coding-img" title="Under Construction" width="128" height="128" />
+                <img src={myPortfolioPic} alt="codingImg" title="My Portfolio" width="128" height="128" />
                 <div className="top-icon">
                     <TopIcon width="30" height="30" title="" alt="Top Icon" />
                 </div>

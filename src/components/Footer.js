@@ -35,7 +35,7 @@ const Footer = () => {
   return (
     <>
     
-    <footer>
+    <footer className="footer">
         {showArrow && (
         <button onClick={scrollToTop} aria-label="Scroll to top">
           <img className="arrow-up-btn" src={arrowUp} width="32" height="32" alt="arrow-up" />
@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
           
         </div>
-      <p>&copy; 2025 - Thiago de Oliveira da Costa</p>
+      <p>&copy; Thiago Costa 2025</p>
     </footer>
     </>
   );

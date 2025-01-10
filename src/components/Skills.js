@@ -17,30 +17,32 @@ import { ReactComponent as Mysql } from '../assets/icons/mysql-colour.svg';
 
 const Skills = () => {
   useEffect(() => {
-    const sr = ScrollReveal({
-      distance: '150px',
-      duration: 800,
-      delay: 200,
-      reset: true, 
-      easing: 'linear',
-    });
+    if (window.innerWidth > 768) {
+      const sr = ScrollReveal({
+        distance: '150px',
+        duration: 800,
+        delay: 200,
+        reset: true, 
+        easing: 'linear',
+      });
 
-    const skills = [
-      { id: 'html', origin: 'left', delay: 200 },
-      { id: 'css', origin: 'left', delay: 400 },
-      { id: 'javascript', origin: 'left', delay: 600 },
-      { id: 'react', origin: 'left', delay: 800 },
-      { id: 'java', origin: 'right', delay: 200 },
-      { id: 'python', origin: 'right', delay: 400 },
-      { id: 'nodejs', origin: 'right', delay: 600 },
-      { id: 'aws', origin: 'right', delay: 800 },
-      { id: 'mongodb', origin: 'right', delay: 1000 },
-      { id: 'mysql', origin: 'right', delay: 1200 },
-    ];
-  
-    skills.forEach(skill => {
-      sr.reveal(`#${skill.id}`, { origin: skill.origin, delay: skill.delay });
-    });
+      const skills = [
+        { id: 'html', origin: 'left', delay: 200 },
+        { id: 'css', origin: 'left', delay: 400 },
+        { id: 'javascript', origin: 'left', delay: 600 },
+        { id: 'react', origin: 'left', delay: 800 },
+        { id: 'java', origin: 'right', delay: 200 },
+        { id: 'python', origin: 'right', delay: 400 },
+        { id: 'nodejs', origin: 'right', delay: 600 },
+        { id: 'aws', origin: 'right', delay: 800 },
+        { id: 'mongodb', origin: 'right', delay: 1000 },
+        { id: 'mysql', origin: 'right', delay: 1200 },
+      ];
+    
+      skills.forEach(skill => {
+        sr.reveal(`#${skill.id}`, { origin: skill.origin, delay: skill.delay });
+      });
+    }
   }, []);
 
   return (

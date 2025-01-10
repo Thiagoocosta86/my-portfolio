@@ -255,7 +255,7 @@ main {
   max-width: 1200px;
   width: 100%;
   gap: 1rem;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 2px solid var(--grey-color);
 }
 
