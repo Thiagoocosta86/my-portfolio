@@ -531,7 +531,7 @@ main {
   .GithubIcon2 {
     position: fixed; /* Make the icon fixed within the viewport */
     bottom: 10px; /* Position near the bottom of the viewport */
-    left: 10px; /* Position near the right of the viewport */
+    left: 30px; /* Position near the right of the viewport */
     z-index: 10; /* Ensure it appears above other content */
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
@@ -548,6 +548,28 @@ main {
   .GithubIcon2:hover svg {
     transform: scale(1.1)
   }
+
+  .VideoIcon {
+    position: fixed; /* Make the icon fixed within the viewport */
+    bottom: 10px; /* Position near the bottom of the viewport */
+    right: 30px; /* Position near the right of the viewport */
+    z-index: 10; /* Ensure it appears above other content */
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .VideoIcon svg {
+    fill: var(--light-color);
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    
+  }
+
+  .VideoIcon:hover svg {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
 
   .projects__title {
     color: var(--secondary-color);

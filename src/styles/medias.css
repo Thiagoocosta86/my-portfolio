@@ -290,6 +290,14 @@
   flex: 1;
   align-self: flex-end;
 }
+
+.VideoIcon svg {    
+  height: 24px;
+  width: 24px;
+  flex: 1;
+  align-self: flex-end;
+}
+
 /*Footer*/
 
 .floating-contact {

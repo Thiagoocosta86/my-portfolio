@@ -7,6 +7,7 @@ import {myPortfolio} from '../data/dataText';
 import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
 import myPortfolioPic from "../assets/img/my-portfolioMobile.png";
 import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
+import { ReactComponent as VideoIcon } from "../assets/icons/videoIcon.svg";
 import { ReactComponent as TopIcon } from "../assets/icons/arrowhead-up.svg";
 import { ReactComponent as CodingImg } from "../assets/img/underConstruction.svg";
 
@@ -45,6 +46,10 @@ const Projects = () => {
                             class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                             <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
                         </a>
+                        <a href="https://drive.google.com/file/d/1iDp7LFQcnPfIPn-PFvAaPqY9eaxacPrt/view?usp=drive_link"
+                            class="projects__button button button__small VideoIcon" target="_blank" rel="noopener noreferrer">
+                            <VideoIcon width="40" title="VideoIcon" height="40" alt="VideoIcon" />
+                        </a>
                     </div>
                 </div>
                 <div className="projects__description">
@@ -63,6 +68,10 @@ const Projects = () => {
                         <a href="https://github.com/Thiagoocosta86/my-portfolio.git"
                             class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                             <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
+                        </a>
+                        <a href="https://drive.google.com/file/d/1cToCMIpF-VTHQT4VXrwnvZ4-PB8BgOIW/view?usp=drive_link"
+                            class="projects__button button button__small VideoIcon" target="_blank" rel="noopener noreferrer">
+                            <VideoIcon width="40" title="VideoIcon" height="40" alt="VideoIcon" />
                         </a>
                     </div>
                 </div>
