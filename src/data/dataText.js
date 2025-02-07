@@ -33,5 +33,13 @@ const myPortfolio =
 
     
 ;
-export {aboutText, carCrashWebApp, myPortfolio};
+
+const awsMyPortfolio =
+    `
+       These slides showcase different Amplify(AWS) and Route53(AWS) settings and configurations for my portfolio deployment in the cloud.
+    `
+
+    
+;
+export {aboutText, carCrashWebApp, myPortfolio, awsMyPortfolio};
 

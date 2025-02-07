@@ -298,6 +298,15 @@
   align-self: flex-end;
 }
 
+.modal {
+  width: 90%;
+  height: 90%;
+}
+
+.extras_cards {
+  margin: 10px;
+  
+}
 /*Footer*/
 
 .floating-contact {
