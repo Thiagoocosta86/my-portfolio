@@ -79,6 +79,10 @@ const Projects = () => {
                                 class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                                 <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
                             </a>
+                            <a href="https://drive.google.com/file/d/1cToCMIpF-VTHQT4VXrwnvZ4-PB8BgOIW/view?usp=drive_link"
+                                class="projects__button button button__small VideoIcon" target="_blank" rel="noopener noreferrer">
+                                <VideoIcon width="40" title="VideoIcon" height="40" alt="VideoIcon" />
+                            </a>
                         </div>
                     </div>
                     <div className="projects__description">
