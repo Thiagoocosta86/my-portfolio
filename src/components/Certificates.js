@@ -19,7 +19,7 @@ import awsGetStartedSecurity from "../assets/img/aws-getting-started-with-securi
 import awsGetStartedServerless from "../assets/img/aws-getting-started-with-serverless.png";
 import awsGetStartedStorage from "../assets/img/aws-getting-started-with-storage.png";
 import awsIntroCloud101 from "../assets/img/aws-introduction-to-cloud-101.png";
-import awsFoundationsCertificate from "../assets/img/AWS-graduate-Academy-Cloud-Foundations.png";
+import awsCertifiedCloudPractitioner from "../assets/img/aws-certified-cloud-practitioner.png";
 
 /*Azure Certificates*/
 import azureDescCloudCompu from "../assets/img/azure-DescribeCloudComputing.png";
@@ -27,6 +27,7 @@ import azureDescCloudServices from "../assets/img/azure-DescribeCloudServiceType
 import azureDescBenef from "../assets/img/azure-DescribeBenefitsOfCloudServices.png";
 
 const awsCertificates = [
+  { src: awsCertifiedCloudPractitioner, url: "https://www.credly.com/badges/438bea28-accb-4aec-9005-2d187d58b1fa/public_url", alt: "AWS Cloud Practitioner", title: "AWS Cloud Practitioner" },
   { src: awsFoundations, url: "https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url", alt: "AWS Foundations", title: "AWS Foundations" },
   { src: awsGetStarted, url: "https://www.credly.com/badges/ea5a1b5c-d9d6-400e-8e9a-d5ccbc792683/public_url", alt: "AWS Getting Started Cloud Ops", title: "AWS Cloud Ops" },
   { src: awsGetStartedDatabases, url: "https://www.credly.com/badges/5f403a28-bb2d-446f-b4dd-9ffafaaf54d6/public_url", alt: "AWS Getting Started Databases", title: "AWS Databases" },
@@ -35,8 +36,8 @@ const awsCertificates = [
   { src: awsGetStartedSecurity, url: "https://www.credly.com/badges/c23da6a1-9d7f-40d4-8d06-f6b922ef92a6/public_url", alt: "AWS Security", title: "AWS Security" },
   { src: awsGetStartedServerless, url: "https://www.credly.com/badges/64b4c12f-8146-405f-9e28-8303c78f5240/public_url", alt: "AWS Serverless", title: "AWS Serverless" },
   { src: awsGetStartedStorage, url: "https://www.credly.com/badges/1221e47b-ae36-4275-8a42-3962a528afb1/public_url", alt: "AWS Storage", title: "AWS Storage" },
-  { src: awsIntroCloud101, url: "https://www.credly.com/badges/51091672-5109-43af-9e85-efdcf9ac4274/public_url", alt: "AWS Cloud 101", title: "AWS Cloud 101" },
-  { src: awsFoundationsCertificate, url: "https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url", alt: "AWS Foundations Certificate", title: "AWS Foundations Certificate" }
+  { src: awsIntroCloud101, url: "https://www.credly.com/badges/51091672-5109-43af-9e85-efdcf9ac4274/public_url", alt: "AWS Cloud 101", title: "AWS Cloud 101" }
+  
 ];
 
 
