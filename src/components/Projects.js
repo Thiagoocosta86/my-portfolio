@@ -7,11 +7,12 @@ import {myPortfolio} from '../data/dataText';
 import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
 import myPortfolioPic from "../assets/img/my-portfolioMobile.png";
 
-import extra1_1 from "../assets/img/Amplify-generalSettings-myportfolio.png";
-import extra1_2 from "../assets/img/Amplify-githubBranchSettings-myportfolio.png";
-import extra1_3 from "../assets/img/Amplify-hostingDomain-thiagodeodacosta.png";
-import extra1_4 from "../assets/img/AmplifyOverview-myportfolio.png";
-import extra1_5 from "../assets/img/Route53Dashboard-thiagodeodacosta.png";
+import extra1_1 from "../assets/img/AWSDeploymentArchitecture.png";
+import extra1_2 from "../assets/img/Amplify-generalSettings-myportfolio.png";
+import extra1_3 from "../assets/img/Amplify-githubBranchSettings-myportfolio.png";
+import extra1_4 from "../assets/img/Amplify-hostingDomain-thiagodeodacosta.png";
+import extra1_5 from "../assets/img/AmplifyOverview-myportfolio.png";
+import extra1_6 from "../assets/img/Route53Dashboard-thiagodeodacosta.png";
 
 import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
 import { ReactComponent as VideoIcon } from "../assets/icons/videoIcon.svg";
@@ -143,6 +144,7 @@ const Projects = () => {
                     <img src={extra1_3} alt="codingImg" title="" />
                     <img src={extra1_4} alt="codingImg" title="" />
                     <img src={extra1_5} alt="codingImg" title="" />
+                    <img src={extra1_6} alt="codingImg" title="" />
                     {isModalOpen && (
                     <div className="modal active">
                         <button className="modal-close" onClick={() => setIsModalOpen(false)}>X</button>
@@ -152,23 +154,30 @@ const Projects = () => {
                 
                 </article>
             </div>
+            
             {/* 
-            <article id="extra2" className="projects__extras">
-                <button className="burger-button" onClick={() => setIsModalOpen(true)}>
-                    <BurgerIcon />
-                </button>
-                <img src={extra2_1} alt="codingImg" title="" />
-                <img src={extra2_2} alt="codingImg" title="" />
-                <img src={extra2_3} alt="codingImg" title="" />
-                <img src={extra2_4} alt="codingImg" title="" />
-                <img src={extra2_5} alt="codingImg" title="" />
-                {isModalOpen && (
-                <div className="modal active">
-                    <button className="modal-close" onClick={() => setIsModalOpen(false)}>X</button>
-                    <p>These slides showcase different Amplify(AWS) and Route53(AWS) settings and configurations for my portfolio.</p>
-                </div>
-                )}
-            </article>
+            <div>
+                <h5>AWS Cloud Deployment - My Portfolio</h5>
+                <article id="extra2" className="projects__extras">
+                    
+                    <button className="burger-button" onClick={() => setIsModalOpen(true)}>
+                        <BurgerIcon />
+                    </button>
+                    <img src={extra1_1} alt="codingImg" title="" />
+                    <img src={extra1_2} alt="codingImg" title="" />
+                    <img src={extra1_3} alt="codingImg" title="" />
+                    <img src={extra1_4} alt="codingImg" title="" />
+                    <img src={extra1_5} alt="codingImg" title="" />
+                    
+                    {isModalOpen && (
+                    <div className="modal active">
+                        <button className="modal-close" onClick={() => setIsModalOpen(false)}>X</button>
+                        <p dangerouslySetInnerHTML={{ __html: awsMyPortfolio }} />
+                    </div>
+                    )}
+                
+                </article>
+            </div>
             */}
              
         </div>
