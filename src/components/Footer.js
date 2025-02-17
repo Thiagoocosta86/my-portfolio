@@ -4,6 +4,7 @@ import { ReactComponent as EmailIcon } from "../assets/icons/logo-email.svg";
 import { ReactComponent as LinkedInIcon2 } from "../assets/icons/logo-linkedin.svg";
 import { ReactComponent as WhatsappIcon } from "../assets/icons/logo-whatsapp.svg";
 import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
+import { ReactComponent as DownloadIcon } from "../assets/icons/downloadIcon.svg";
 import arrowUp from "../assets/icons/arrow-up.svg";
 
 const Footer = () => {
@@ -55,6 +56,9 @@ const Footer = () => {
               </a>
               <a className="social__profile-link WhatsappIcon" href="https://api.whatsapp.com/send?phone=353871720557&text=Hello, more information!" aria-label="Get in touch by Whatsapp" target="_blank" rel="noopener noreferrer">
                   <WhatsappIcon title="Whatsapp" width="32" height="32" alt="Whatsapp"/>
+              </a>
+              <a className="social__profile-link DownloadIcon" href="/CV.pdf" download="CV.pdf" aria-label="Download my CV" target="_blank" rel="noopener noreferrer">
+                  <DownloadIcon title="CV" width="32" height="32" alt="CV "/>
               </a>
           </ul>
           </div>

@@ -824,6 +824,11 @@ to {
   transform: scale(1.1)
 }
 
+.DownloadIcon:hover svg {
+  fill: var(--light-color); /* Download*/
+  transform: scale(1.1)
+}
+
 
 button {
   all: unset; /* Resets all inherited styles */
