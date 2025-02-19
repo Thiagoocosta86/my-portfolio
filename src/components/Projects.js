@@ -8,11 +8,10 @@ import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
 import myPortfolioPic from "../assets/img/my-portfolioMobile.png";
 
 import extra1_1 from "../assets/img/AWSDeploymentArchitecture.png";
-import extra1_2 from "../assets/img/Amplify-generalSettings-myportfolio.png";
-import extra1_3 from "../assets/img/Amplify-githubBranchSettings-myportfolio.png";
-import extra1_4 from "../assets/img/Amplify-hostingDomain-thiagodeodacosta.png";
-import extra1_5 from "../assets/img/AmplifyOverview-myportfolio.png";
-import extra1_6 from "../assets/img/Route53Dashboard-thiagodeodacosta.png";
+import extra1_2 from "../assets/img/Amplify-hostingDomain-thiagodeodacosta.png";
+import extra1_3 from "../assets/img/AmplifyOverview-myportfolio.png";
+import extra1_4 from "../assets/img/Route53Dashboard-thiagodeodacosta.png";
+import extra1_5 from "../assets/img/my-portfoliocvS3.png";
 
 import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
 import { ReactComponent as VideoIcon } from "../assets/icons/videoIcon.svg";
@@ -144,7 +143,7 @@ const Projects = () => {
                     <img src={extra1_3} alt="codingImg" title="" />
                     <img src={extra1_4} alt="codingImg" title="" />
                     <img src={extra1_5} alt="codingImg" title="" />
-                    <img src={extra1_6} alt="codingImg" title="" />
+                    
                     {isModalOpen && (
                     <div className="modal active">
                         <button className="modal-close" onClick={() => setIsModalOpen(false)}>X</button>

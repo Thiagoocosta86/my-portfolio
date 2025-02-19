@@ -57,7 +57,7 @@ const Footer = () => {
               <a className="social__profile-link WhatsappIcon" href="https://api.whatsapp.com/send?phone=353871720557&text=Hello, more information!" aria-label="Get in touch by Whatsapp" target="_blank" rel="noopener noreferrer">
                   <WhatsappIcon title="Whatsapp" width="32" height="32" alt="Whatsapp"/>
               </a>
-              <a className="social__profile-link DownloadIcon" href="https://drive.google.com/file/d/1QaTZgQiRs_bINojRui_jSPWKp_ELfJc5/view?usp=sharing" download="CV.pdf" aria-label="Download my CV" target="_blank" rel="noopener noreferrer">
+              <a className="social__profile-link DownloadIcon" href="https://my-portfoliocv.s3.eu-west-1.amazonaws.com/CV.pdf" download="CV.pdf" aria-label="Download my CV" target="_blank" rel="noopener noreferrer">
                   <DownloadIcon title="CV" width="32" height="32" alt="CV "/>
               </a>
           </ul>
