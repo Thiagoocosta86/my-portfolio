@@ -636,62 +636,71 @@ main {
   height: auto;
   max-width: 800px; /* Adjust as needed */
   max-height: 400px;
+  background-color: var(--light-color);
 }
 
 
 
-#extra1{
-  background-color: #FAFAFA;
-}
+
 
 #extra1 img{
   width: 100%;
   height: 100%;
   flex-shrink: 0;
-  animation: slideAnimationEx1 60s infinite ease-in-out;
+  animation: slideAnimationEx1 25s infinite ease-in-out;
 }
 
-#extra2{
-  background-color: #FAFAFA;
-}
+
 
 #extra2 img{
   width: 100%;
   height: 100%;
   flex-shrink: 0;
-  animation: slideAnimationEx2 60s infinite ease-in-out;
+  animation: slideAnimationEx2 20s infinite ease-in-out;
+}
+
+#extra3 img{
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  animation: slideAnimationEx2 20s infinite ease-in-out;
 }
 
 @keyframes slideAnimationEx1 {
-  0%, 16% { transform: translateX(0); }       /* Stay on first image */
-  18%, 32% { transform: translateX(-100%); }  /* Stay on second image */
-  34%, 48% { transform: translateX(-200%); }  /* Stay on third image */
-  50%, 64% { transform: translateX(-300%); }  /* Stay on fourth image */
-  66%, 80% { transform: translateX(-400%); }  /* Stay on fifth image */
-  82%, 98% { transform: translateX(-500%); }  /* Stay on sixth image */
-  100% { transform: translateX(0); }          /* Loop back to first image */
-}
-
-@keyframes slideAnimationEx2 {
   0%, 18% { transform: translateX(0); }       /* Stay on first image */
   20%, 38% { transform: translateX(-100%); }  /* Stay on second image */
   40%, 58% { transform: translateX(-200%); }  /* Stay on third image */
   60%, 78% { transform: translateX(-300%); }  /* Stay on fourth image */
   80%, 98% { transform: translateX(-400%); }  /* Stay on fifth image */
-  100% { transform: translateX(0); }          /* Loop back to first image */         /* Loop back to first image */
+  100% { transform: translateX(0); }          /* Loop back to first image */ 
+}
+
+@keyframes slideAnimationEx2 {
+  0%, 24% { transform: translateX(0); }       /* Stay on first image */
+  26%, 49% { transform: translateX(-100%); }  /* Stay on second image */
+  51%, 74% { transform: translateX(-200%); }  /* Stay on third image */
+  76%, 98% { transform: translateX(-300%); }  /* Stay on fourth image */
+  100% { transform: translateX(0); }          /* Loop back to first image */
 }
 
 
 .burger-button {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
+  top: 10px;
+  right: 10px;
   z-index: 10;
   background: var(--primary-color);
   border: none;
   padding: 2px 4px;
   cursor: pointer;
   border-radius: 3px;
+  animation: borderColorChange 3s infinite alternate;
+}
+
+@keyframes borderColorChange {
+  0% { border: 3px double#96CADB; } /* Initial color */
+  50% { border: 3px double#004568; } /* Midpoint color */
+  100% { border: 3px double#96CADB; } /* Back to initial */
 }
 
 .burger-button svg {
@@ -755,6 +764,28 @@ to {
 .projects__extras {
   position: relative;
 }
+
+
+.projects-swiper {
+  width: 1000PX;
+  height: auto;
+}
+
+.projects-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-swiper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
 
 /*CONTACT*/
 

@@ -37,10 +37,26 @@ const myPortfolio =
 const awsMyPortfolio =
     `
        These slides showcase the AWS deployment architecture used to deploy this portfolio, using different Amplify(AWS) and Route53(AWS) settings and configurations, and also a 
-       S3 bucket to store a CV.pdf file for download.
+       S3 buckets to store a CV.pdf file for download and images.
     `
 
     
 ;
-export {aboutText, carCrashWebApp, myPortfolio, awsMyPortfolio};
+
+const s3Config =
+    `
+       These slides showcase the AWS S3 Buckets different settings and configurations.
+    `
+
+    
+;
+
+const iamConfig =
+    `
+       These slides showcase the AWS IAM (Identity and Access Management) different settings and configurations.
+    `
+
+    
+;
+export {aboutText, carCrashWebApp, myPortfolio, awsMyPortfolio, s3Config, iamConfig};
 

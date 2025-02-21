@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 
-import {awsMyPortfolio, carCrashWebApp} from '../data/dataText';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+
+import {awsMyPortfolio, carCrashWebApp, s3Config, iamConfig} from '../data/dataText';
 import {myPortfolio} from '../data/dataText';
 
 import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
 import myPortfolioPic from "../assets/img/my-portfolioMobile.png";
 
-import extra1_1 from "../assets/img/AWSDeploymentArchitecture.png";
-import extra1_2 from "../assets/img/Amplify-hostingDomain-thiagodeodacosta.png";
-import extra1_3 from "../assets/img/AmplifyOverview-myportfolio.png";
-import extra1_4 from "../assets/img/Route53Dashboard-thiagodeodacosta.png";
-import extra1_5 from "../assets/img/my-portfoliocvS3.png";
+
+
+
+
 
 import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
 import { ReactComponent as VideoIcon } from "../assets/icons/videoIcon.svg";
@@ -20,6 +25,24 @@ import { ReactComponent as CodingImg } from "../assets/img/underConstruction.svg
 import { ReactComponent as BurgerIcon } from "../assets/icons/burger-menu.svg";
 
 const Projects = () => {
+
+    const extra1_1 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/AWSDeploymentArchitecture.png";
+    const extra1_2 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/Amplify-hostingDomain-thiagodeodacosta.png";
+    const extra1_3 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/AmplifyOverview-myportfolio.png";
+    const extra1_4 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/Route53Dashboard-thiagodeodacosta.png";
+    const extra1_5 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/my-portfoliocvS3.png";
+
+    const extra2_1 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/currentS3Buckets.png";
+    const extra2_2 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/my-portfoliocvS3.png";
+    const extra2_3 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/myportfolio-img.png";
+    const extra2_4 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/S3bucketPolicy.png";
+
+    const extra3_1 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/IAM-Dashbord.png";
+    const extra3_2 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/IAM-UserConfig.png";
+    const extra3_3 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/IAM-UserConfig2.png";
+    const extra3_4 = "https://myportfolio-img.s3.eu-west-1.amazonaws.com/IAM-Users.png";
+    
+
     const [isModalOpen, setIsModalOpen] = useState(false);
     useEffect(() => {
         if (window.innerWidth > 768) {
@@ -131,53 +154,86 @@ const Projects = () => {
         </div>
       <h4>Extras</h4>
         <div className='extras_cards'>
-            <div>
-                <h5>AWS Cloud Deployment - My Portfolio</h5>
-                <article id="extra1" className="projects__extras">
-                    
-                    <button className="burger-button" onClick={() => setIsModalOpen(true)}>
-                        <BurgerIcon />
-                    </button>
-                    <img src={extra1_1} alt="codingImg" title="" />
-                    <img src={extra1_2} alt="codingImg" title="" />
-                    <img src={extra1_3} alt="codingImg" title="" />
-                    <img src={extra1_4} alt="codingImg" title="" />
-                    <img src={extra1_5} alt="codingImg" title="" />
-                    
-                    {isModalOpen && (
-                    <div className="modal active">
-                        <button className="modal-close" onClick={() => setIsModalOpen(false)}>X</button>
-                        <p dangerouslySetInnerHTML={{ __html: awsMyPortfolio }} />
-                    </div>
-                    )}
-                
-                </article>
-            </div>
+        <Swiper
+      spaceBetween={50}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true, dynamicBullets: true }}
+      modules={[Navigation, Pagination]}
+      className="projects-swiper"
+    >
+      {/* Slide 1 - AWS Cloud Deployment */}
+      <SwiperSlide>
+        <div>
+          <h5>AWS Cloud Deployment - My Portfolio</h5>
+          <article id="extra1" className="projects__extras">
+            <button className="burger-button" onClick={() => setIsModalOpen(true)}>
+              <BurgerIcon />
+            </button>
+            <img src={extra1_1} alt="AWS Deployment Architecture" />
+            <img src={extra1_2} alt="Amplify Hosting Domain" />
+            <img src={extra1_3} alt="Amplify Overview" />
+            <img src={extra1_4} alt="Route 53 Dashboard" />
+            <img src={extra1_5} alt="Portfolio CV on S3" />
+
+            {isModalOpen && (
+              <div className="modal active">
+                <button className="modal-close" onClick={() => setIsModalOpen(false)}>X</button>
+                <p dangerouslySetInnerHTML={{ __html: awsMyPortfolio }} />
+              </div>
+            )}
+          </article>
+        </div>
+      </SwiperSlide>
+
+      {/* Slide 2 - AWS S3 Config */}
+      <SwiperSlide>
+        <div>
+          <h5>AWS Cloud S3 Bucket Configurations</h5>
+          <article id="extra2" className="projects__extras">
+            <button className="burger-button" onClick={() => setIsModalOpen(true)}>
+              <BurgerIcon />
+            </button>
+            <img src={extra2_1} alt="AWS currentS3Buckets" />
+            <img src={extra2_2} alt="AWS my-portfoliocvS3" />
+            <img src={extra2_3} alt="AWS myportfolio-img" />
+            <img src={extra2_4} alt="AWS S3bucketPolicy" />
             
-            {/* 
-            <div>
-                <h5>AWS Cloud Deployment - My Portfolio</h5>
-                <article id="extra2" className="projects__extras">
-                    
-                    <button className="burger-button" onClick={() => setIsModalOpen(true)}>
-                        <BurgerIcon />
-                    </button>
-                    <img src={extra1_1} alt="codingImg" title="" />
-                    <img src={extra1_2} alt="codingImg" title="" />
-                    <img src={extra1_3} alt="codingImg" title="" />
-                    <img src={extra1_4} alt="codingImg" title="" />
-                    <img src={extra1_5} alt="codingImg" title="" />
-                    
-                    {isModalOpen && (
-                    <div className="modal active">
-                        <button className="modal-close" onClick={() => setIsModalOpen(false)}>X</button>
-                        <p dangerouslySetInnerHTML={{ __html: awsMyPortfolio }} />
-                    </div>
-                    )}
-                
-                </article>
-            </div>
-            */}
+
+            {isModalOpen && (
+              <div className="modal active">
+                <button className="modal-close" onClick={() => setIsModalOpen(false)}>X</button>
+                <p dangerouslySetInnerHTML={{ __html: s3Config }} />
+              </div>
+            )}
+          </article>
+        </div>
+      </SwiperSlide>
+
+      {/* Slide 2 - AWS IAM Config */}
+      <SwiperSlide>
+        <div>
+          <h5>AWS Cloud IAM Configurations</h5>
+          <article id="extra3" className="projects__extras">
+            <button className="burger-button" onClick={() => setIsModalOpen(true)}>
+              <BurgerIcon />
+            </button>
+            <img src={extra3_1} alt="AWS IAM-Dashbord" />
+            <img src={extra3_2} alt="IAM-UserConfig" />
+            <img src={extra3_3} alt="IAM-UserConfig2" />
+            <img src={extra3_4} alt="IAM-Users" />
+            
+
+            {isModalOpen && (
+              <div className="modal active">
+                <button className="modal-close" onClick={() => setIsModalOpen(false)}>X</button>
+                <p dangerouslySetInnerHTML={{ __html: iamConfig }} />
+              </div>
+            )}
+          </article>
+        </div>
+      </SwiperSlide>
+    </Swiper>
              
         </div>
        
