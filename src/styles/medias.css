@@ -298,6 +298,11 @@
   align-self: flex-end;
 }
 
+.Info-button svg{
+  height: 24px;
+  width: 24px;
+}
+
 .modal {
   width: 90%;
   height: 90%;

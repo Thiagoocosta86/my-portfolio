@@ -22,7 +22,7 @@ import { ReactComponent as GithubIcon2 } from "../assets/icons/logo-github.svg";
 import { ReactComponent as VideoIcon } from "../assets/icons/videoIcon.svg";
 import { ReactComponent as TopIcon } from "../assets/icons/arrowhead-up.svg";
 import { ReactComponent as CodingImg } from "../assets/img/underConstruction.svg";
-import { ReactComponent as BurgerIcon } from "../assets/icons/burger-menu.svg";
+import { ReactComponent as InfoIcon } from "../assets/icons/info.svg";
 
 const Projects = () => {
 
@@ -167,8 +167,8 @@ const Projects = () => {
         <div>
           <h5>AWS Cloud Deployment - My Portfolio</h5>
           <article id="extra1" className="projects__extras">
-            <button className="burger-button" onClick={() => setIsModalOpen(true)}>
-              <BurgerIcon />
+            <button className="Info-button" onClick={() => setIsModalOpen(true)}>
+              <InfoIcon />
             </button>
             <img src={extra1_1} alt="AWS Deployment Architecture" />
             <img src={extra1_2} alt="Amplify Hosting Domain" />
@@ -191,8 +191,8 @@ const Projects = () => {
         <div>
           <h5>AWS Cloud S3 Bucket Configurations</h5>
           <article id="extra2" className="projects__extras">
-            <button className="burger-button" onClick={() => setIsModalOpen(true)}>
-              <BurgerIcon />
+            <button className="Info-button" onClick={() => setIsModalOpen(true)}>
+              <InfoIcon />
             </button>
             <img src={extra2_1} alt="AWS currentS3Buckets" />
             <img src={extra2_2} alt="AWS my-portfoliocvS3" />
@@ -215,8 +215,8 @@ const Projects = () => {
         <div>
           <h5>AWS Cloud IAM Configurations</h5>
           <article id="extra3" className="projects__extras">
-            <button className="burger-button" onClick={() => setIsModalOpen(true)}>
-              <BurgerIcon />
+            <button className="Info-button" onClick={() => setIsModalOpen(true)}>
+              <InfoIcon />
             </button>
             <img src={extra3_1} alt="AWS IAM-Dashbord" />
             <img src={extra3_2} alt="IAM-UserConfig" />

@@ -684,29 +684,27 @@ main {
 }
 
 
-.burger-button {
+.Info-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   z-index: 10;
-  background: var(--primary-color);
-  border: none;
-  padding: 2px 4px;
+  background: var(--light-color);
   cursor: pointer;
-  border-radius: 3px;
-  animation: borderColorChange 3s infinite alternate;
+  background: transparent;
+  
 }
 
-@keyframes borderColorChange {
-  0% { border: 3px double#96CADB; } /* Initial color */
-  50% { border: 3px double#004568; } /* Midpoint color */
-  100% { border: 3px double#96CADB; } /* Back to initial */
+@keyframes infoColorChange {
+  0% { fill: transparent; } /* Initial color */
+  50% { fill: var(--primary-color); } /* Midpoint color */
+  100% { fill: transparent; } /* Back to initial */
 }
 
-.burger-button svg {
-  width: 10px;
-  height: 10px;
-  fill: var(--light-color);
+.Info-button svg {
+  width: clamp(24px, 3vw, 32px);
+  height: clamp(24px, 3vw, 32px);
+  animation: infoColorChange 3s infinite alternate;
 }
 
 
