@@ -167,7 +167,7 @@ const Projects = () => {
         <div>
           <h5>AWS Cloud Deployment - My Portfolio</h5>
           <article id="extra1" className="projects__extras">
-            <button className="Info-button" onClick={() => setIsModalOpen(true)}>
+            <button className="Info-button" title= "Info" onClick={() => setIsModalOpen(true)}>
               <InfoIcon />
             </button>
             <img src={extra1_1} alt="AWS Deployment Architecture" />
@@ -191,7 +191,7 @@ const Projects = () => {
         <div>
           <h5>AWS Cloud S3 Bucket Configurations</h5>
           <article id="extra2" className="projects__extras">
-            <button className="Info-button" onClick={() => setIsModalOpen(true)}>
+            <button className="Info-button" title= "Info" onClick={() => setIsModalOpen(true)}>
               <InfoIcon />
             </button>
             <img src={extra2_1} alt="AWS currentS3Buckets" />
@@ -215,7 +215,7 @@ const Projects = () => {
         <div>
           <h5>AWS Cloud IAM Configurations</h5>
           <article id="extra3" className="projects__extras">
-            <button className="Info-button" onClick={() => setIsModalOpen(true)}>
+            <button className="Info-button" title= "Info" onClick={() => setIsModalOpen(true)}>
               <InfoIcon />
             </button>
             <img src={extra3_1} alt="AWS IAM-Dashbord" />
