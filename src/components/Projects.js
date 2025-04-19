@@ -12,7 +12,7 @@ import {myPortfolio} from '../data/dataText';
 
 import carCrashWebAppPic from "../assets/img/carCrashWebAppPic.png";
 import myPortfolioPic from "../assets/img/my-portfolioMobile.png";
-
+import wineShop from "../assets/img/wineShop.png";
 
 
 
@@ -113,14 +113,14 @@ const Projects = () => {
                     </div>
                 </article>
                 <article id="project3" class="projects__card">
-                    <CodingImg className="coding-img" title="Under Construction" width="128" height="128" />
+                    <img src={wineShop} alt="codingImg" title="" width="128" height="128" />
                     <div className="top-icon">
                         <TopIcon width="30" height="30" title="" alt="Top Icon" />
                     </div>
                     <div class="projects__modal">
                         <div>
-                            <span class="projects__subtitle"></span>
-                            <h3 class="projects__title">Under Construction</h3>
+                            <span class="projects__subtitle">Under Construction</span>
+                            <h3 class="projects__title">WineShop Retail / ecommerce System</h3>
                             <a href="https://github.com/Thiagoocosta86"
                                 class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                                 <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
@@ -138,8 +138,8 @@ const Projects = () => {
                     </div>
                     <div class="projects__modal">
                         <div>
-                            <span class="projects__subtitle"></span>
-                            <h3 class="projects__title">Under Construction</h3>
+                            <span class="projects__subtitle">Under Construction</span>
+                            <h3 class="projects__title">Coming Soon</h3>
                             <a href="https://github.com/Thiagoocosta86"
                                 class="projects__button button button__small GithubIcon2" target="_blank" rel="noopener noreferrer">
                                 <GithubIcon2 width="40" title="GitHub" height="40" alt="GitHub" />
