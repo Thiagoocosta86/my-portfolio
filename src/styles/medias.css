@@ -526,6 +526,30 @@ nav ul li a:hover {
     justify-content: center;
   }
  
+    .Info-button svg{
+  height: 24px;
+  width: 24px;
+}
+
+.modal {
+  width: 90%;
+  height: 90%;
+}
+
+.extras_cards {
+  margin: 10px;
+}
+
+.projects-swiper .swiper-pagination {
+  position: absolute;
+  bottom: -10px;
+}
+
+.projects-swiper .swiper-button-next,
+.projects-swiper .swiper-button-prev {
+  display: none !important;
+}
+
   /*Footer*/
 
   .floating-contact {

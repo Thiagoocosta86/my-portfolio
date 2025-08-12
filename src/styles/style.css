@@ -365,6 +365,10 @@ main {
   margin: auto; 
 }
 
+.cct.certificates .swiper-wrapper {
+  justify-content: center; 
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--primary-color); /* Button color */
