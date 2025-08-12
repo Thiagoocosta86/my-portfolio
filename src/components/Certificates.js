@@ -26,6 +26,9 @@ import azureDescCloudCompu from "../assets/img/azure-DescribeCloudComputing.png"
 import azureDescCloudServices from "../assets/img/azure-DescribeCloudServiceTypes.png";
 import azureDescBenef from "../assets/img/azure-DescribeBenefitsOfCloudServices.png";
 
+/*CCT Certificates*/
+import cctCyberSecurity from "../assets/img/cyberSecurityEssentials.png";
+
 const awsCertificates = [
   { src: awsCertifiedCloudPractitioner, url: "https://www.credly.com/badges/438bea28-accb-4aec-9005-2d187d58b1fa/public_url", alt: "AWS Cloud Practitioner", title: "AWS Cloud Practitioner" },
   { src: awsFoundations, url: "https://www.credly.com/badges/5c975e2a-5829-4b5f-9fd0-81e33e00a7d5/public_url", alt: "AWS Foundations", title: "AWS Foundations" },
@@ -45,6 +48,12 @@ const azureCertificates = [
   { src: azureDescCloudCompu, url: "https://learn.microsoft.com/api/achievements/share/en-us/ThiagoCosta-9234/HAV63VE8?sharingId=459220D993E9D11A", alt: "Azure Cloud Computing", title: "Azure Cloud Computing" },
   { src: azureDescCloudServices, url: "https://learn.microsoft.com/en-us/users/thiagocosta-9234/achievements/aptvkha7", alt: "Azure Cloud Services", title: "Azure Cloud Services" },
   { src: azureDescBenef, url: "https://learn.microsoft.com/api/achievements/share/en-us/ThiagoCosta-9234/ZK5QK6E2?sharingId=459220D993E9D11A", alt: "Azure Cloud Benefits", title: "Azure Cloud Benefits" }
+
+];
+
+const cctCertificates = [
+  
+  { src: cctCyberSecurity, url: "https://moodle.cct.ie/badges/badge.php?hash=54e623dc4925784a6f6aeaa7c7ae6249c4eca139", alt: "Cyber Security Essentials", title: "Cyber Security Essentials" }
 
 ];
 
@@ -81,6 +90,12 @@ const Certificates = () => {
           onClick={() => setCurrentTab(1)}
         >
           Azure
+        </button>
+        <button
+          className={`tab-button ${currentTab === 2 ? "active" : ""}`}
+          onClick={() => setCurrentTab(2)}
+        >
+          CCT
         </button>
       </div>
       <div className="tab-content">
@@ -126,6 +141,28 @@ const Certificates = () => {
           >
             {renderSwiperSlides(azureCertificates)}
           </Swiper>
+          
+        </div>
+        <div className={`certificates-panel ${currentTab === 2 ? "active" : ""}`}>
+          <Swiper className="cct certificates"
+            modules={[Navigation, Pagination]}
+            navigation
+            pagination={{ clickable: true, dynamicBullets: true }}
+            breakpoints={{
+              768: {
+                slidesPerView: 1, // Show 1 slide for screen widths <= 768px
+              },
+              992: {
+                slidesPerView: 2, // Show 2 slide for screen widths <= 992px
+              },
+              1081: {
+                slidesPerView: 3, // Show 2 slides for screen widths > 1081px
+              },
+            }}
+          >
+            {renderSwiperSlides(cctCertificates)}
+          </Swiper>
+
         </div>
       </div>
     </section>
