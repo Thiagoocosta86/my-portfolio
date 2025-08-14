@@ -1,9 +1,11 @@
 
 :root {
   --primary-color: #39535C; /* Main text and stroke color */
-  --secondary-color: #96CADB; /* Light blue for backgrounds and accents */
-  --light-color: #F5F5F5; /* Light background color */
+  --secondary-color: #F5F5F5; /* Light blue for backgrounds and accents 96CADB*/
+  --light-color: #96CADB; /* Light background color F5F5F5 */
   --grey-color: #b1ab96; /* Accent color for borders */
+  --rgba: rgba(245, 245, 245, 0.75);
+  --rgbaLightBlue: rgba(150, 202, 219, 0.45);
 }
 
 
@@ -31,7 +33,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--primary-color);
-  background: linear-gradient(var(--secondary-color), var(--light-color), var(--secondary-color));
+  background: linear-gradient(var(--secondary-color),var(--rgbaLightBlue),var(--secondary-color));
   min-height: 100vh;
   overflow-x: hidden;
   /*border: 4px solid #333; */
@@ -43,7 +45,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3%;
-  background: linear-gradient(var(--secondary-color));
+  background: var(--rgba);
 }
 
 
@@ -184,6 +186,10 @@ main {
   font-size: clamp(1rem, 1.2vw, 1.2rem); /* Scales text size responsively */
 }
 
+.about-text p:first-child {
+  font-weight: bold;
+  font-size: 40px;
+}
 .about-text p:last-child {
   font-weight: bold;
   text-align: center;
@@ -306,7 +312,7 @@ main {
   transition: all 0.3s ease;
   border-radius: 5px 5px 0 0;
   letter-spacing: 3px;
-  border: 2px outset var(--secondary-color);
+  border: 2px outset var(--rgba);
   transition: box-shadow 0.3s ease;
   font-family: "Oxanium", sans-serif;
   font-size: 1.4rem;
@@ -314,17 +320,17 @@ main {
 }
 
 .tab-button.active {
-  background-color: var(--secondary-color);
+  background-color: var(--rgba);
   color: var(--primary-color);
   
 }
 
 .tab-content {
   position: relative;
-  border-bottom: 2px outset var(--secondary-color);
-  border-left: 2px outset var(--secondary-color);
-  border-right: 2px outset var(--secondary-color);
-  background-color: var(--secondary-color);
+  border-bottom: 2px outset var(--rgba);
+  border-left: 2px outset var(--rgba);
+  border-right: 2px outset var(--rgba);
+  background-color: var(--rgba);
   border-radius: 0px 10px 10px 10px;
   transition: 0.3s;
 }
@@ -430,7 +436,7 @@ main {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    background-color: var(--secondary-color);
+    background-color: var(--light-color);
     border: 2px outset var(--grey-color);
     width: 100%; /* Ensure image scales with the container */
     height: 600px;
@@ -521,7 +527,7 @@ main {
     left: 0;
     width: 100%;
     height: 250px;
-    background-color: var(--secondary-color); /* Light background for contrast */
+    background-color: rgba(150, 202, 219, 0.95); /* Light background for contrast */
     color: var(--primary-color); /* Text color */
     padding: 1rem;
     text-align: center;
@@ -542,7 +548,7 @@ main {
   }
 
   .GithubIcon2 svg {
-    fill: var(--light-color);
+    fill: var(--primary-color);
     height: 32px;
     width: 32px;
     align-self: center;
@@ -563,7 +569,7 @@ main {
   }
 
   .VideoIcon svg {
-    fill: var(--light-color);
+    fill: var(--primary-color);
     height: 32px;
     width: 32px;
     align-self: center;
@@ -640,7 +646,7 @@ main {
   height: auto;
   max-width: 800px; /* Adjust as needed */
   max-height: 400px;
-  background-color: var(--light-color);
+  background-color: var(--secondary-color);
 }
 
 
@@ -718,7 +724,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.7);
-  color: var(--light-color);
+  color: var(--secondary-color);
   padding: 20px;
   border-radius: 8px;
   width: 70%;
@@ -752,11 +758,11 @@ to {
 
 .modal-close {
   background: none;
-  border: 1px solid var(--light-color);
+  border: 1px solid var(--secondary-color);
   padding: 2px 4px;
   cursor: pointer;
   border-radius: 3px;
-  color: var(--light-color);
+  color: var(--secondary-color);
   position: absolute;
   top: 10px;
   right: 10px;
@@ -798,7 +804,7 @@ to {
   left: 0; /* Align it to the left */
   max-width: clamp(80px, 0, 100px); /* Set an appropriate width */
   padding: 20px; /* Add some padding */
-  background-color: var(--secondary-color); /* Background color matching your theme */
+  background-color: var(--rgba); /* Background color matching your theme */
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0px 15px 15px 0px;
   border: 1px solid var(--grey-color);
@@ -872,7 +878,7 @@ button {
   position: fixed;
   bottom: calc(50% + 10px); /* Adjust as needed */
   right: 20px; /* Adjust as needed */
-  background-color: var(--secondary-color);
+  background-color: var(--rgba);
   border: none;
   border-radius: 50%;
   width: 50px;
@@ -901,7 +907,7 @@ button {
 footer {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(var(--secondary-color));
+  background: var(--rgba);
   color: var(--primary-color);
   font-size: 1.2rem;
 }

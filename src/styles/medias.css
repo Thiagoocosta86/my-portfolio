@@ -11,7 +11,7 @@
   header {
     flex-direction: column;
     padding: 50px;
-    
+    background-color: var(--rgba);
   }
 
   .hamburger {
@@ -19,7 +19,7 @@
     padding-left: 15px;
     z-index: 11;
     height: 48px;
-    background-color: rgba(150, 202, 219, 0.95); /* Semi-transparent background */
+    background-color: var(--rgba); /* Semi-transparent background */
     font-size: 2rem;
     cursor: pointer;
     position: fixed;
@@ -41,7 +41,7 @@
     left: 0;
     width: 100%;
     height: auto;
-    background-color: rgba(150, 202, 219, 0.95); /* Semi-transparent background */
+    background-color: var(--rgba); /* Semi-transparent background */
     z-index: 10;
     overflow-y: auto;
     transform: translateY(-100%);
@@ -289,6 +289,7 @@
   width: 24px;
   flex: 1;
   align-self: flex-end;
+  fill: var(--secondary-color);
 }
 
 .VideoIcon svg {    
@@ -296,6 +297,7 @@
   width: 24px;
   flex: 1;
   align-self: flex-end;
+  fill: var(--secondary-color);
 }
 
 .Info-button svg{
@@ -375,9 +377,11 @@ h3{
 }
 
 /*Navbar*/
+
 header {
   flex-direction: column;
   padding: 50px;
+  background-color: var(--rgba);
 }
 
 .hamburger {
@@ -385,7 +389,7 @@ header {
   padding-left: 15px;
   z-index: 11;
   height: 48px;
-  background-color: rgba(150, 202, 219, 0.95); /* Semi-transparent background */
+  background-color: var(--rgba); /* Semi-transparent background */
   font-size: 2rem;
   cursor: pointer;
   position: fixed;
@@ -407,7 +411,7 @@ nav {
   left: 0;
   width: 100%;
   height: auto;
-  background-color: rgba(150, 202, 219, 0.95); /* Semi-transparent background */
+  background-color: var(--rgba); /* Semi-transparent background */
   z-index: 10;
   overflow-y: auto;
   transform: translateY(-100%);
