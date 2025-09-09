@@ -225,56 +225,64 @@ main {
   margin-bottom: 30px;
 }
 
-
-
 .skills-column {
-  flex: 1;
-  display: flex;  
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin-top: 50px;
-  gap: 50px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* 2 equal columns */
+  grid-template-rows: 1fr 1fr;     /* 2 equal rows */
+  grid-template-areas: 
+    "frontend softSkills"
+    "tools backend";
+  gap: 20px; /* optional spacing between columns */
 }
 
-/* Frontend and Backend Skills Styles */
-.frontend-column, .backend-column {
-  min-width: 45%;
+/* Assign grid areas */
+.frontend-column {
+  grid-area: frontend;
+}
+.softSkills-column {
+  grid-area: softSkills;
+}
+.tools-column {
+  grid-area: tools;
+}
+.backend-column {
+  grid-area: backend;
+}
+
+.skills-box {
+  background-color: var(--rgba);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.frontend-column h4 {
-  align-self:  baseline;
-}
-
-.backend-column h4 {
-  align-self:  self-end;
-}
-
-.frontend-skills, .backend-skills {
+.frontend-skills, .backend-skills, .soft-skills, .tools-skills {
   list-style: none;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
   width: 100%;
   gap: 1rem;
   justify-content: space-between;
-  border-bottom: 2px solid var(--grey-color);
+  
 }
 
-.frontend-skills li, .backend-skills li {
+.frontend-skills li, .backend-skills li , .soft-skills li, .tools-skills li {
   display: flex;
   flex-direction: column;
   align-items:center;
   gap: 15px;
   font-size: 1.2rem;
   padding: 5px 0;
-  justify-content: space-between;
+  
   position: relative;
 }
+
+
 
 .tech-icon {
   width: clamp(24px, 3vw, 32px);
@@ -396,7 +404,7 @@ main {
 }
 
 .swiper-pagination-bullet {
-  background: #b4cbd3; /* Bullet color */
+  background: var(--grey-color); /* Bullet color */
   width: 12px;
   height: 12px;
   background-color: var(--primary-color);

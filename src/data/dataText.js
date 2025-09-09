@@ -10,8 +10,7 @@ const aboutText =
   efficiency and scalability. I thrive on learning about cutting-edge tools, architecting solutions, and 
   optimizing workflows in the cloud space.</p>
   
-    <p>Outside of tech, I enjoy spending quality time with family and friends, and I’m always open to 
-  connecting with like-minded individuals to share knowledge and experiences.</p>
+    
   
     <p>Let’s build something amazing together!</p>
  

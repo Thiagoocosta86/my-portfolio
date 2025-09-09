@@ -118,23 +118,28 @@
   flex-direction: row;
   gap: none;
 }
-.frontend-column h4, .backend-column h4 {
+
+.frontend-column h4, .backend-column h4, .softSkills-column h4, .tools-column h4 {
   align-self:  center;
 }
 
 
-.frontend-skills, .backend-skills {
+
+.frontend-skills, .backend-skills , .soft-skills, .tools-skills{
   flex-direction: column;
+  
   width: auto;
-  border: none;
   height: 100%;
+  justify-content: space-between;
 }
 
-.frontend-skills li, .backend-skills li {
+
+.frontend-skills li, .backend-skills li , .soft-skills li, .tools-skills li{
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
   position: relative;
-  border-bottom: 2px solid var(--grey-color);
+  border-bottom: 1px solid var(--grey-color);
+  
 }
 
 .tech-icon {
